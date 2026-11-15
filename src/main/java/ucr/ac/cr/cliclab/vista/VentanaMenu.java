@@ -4,6 +4,8 @@
  */
 package ucr.ac.cr.cliclab.vista;
 
+import java.awt.event.ActionListener;
+
 /**
  *
  * @author mathi
@@ -19,6 +21,17 @@ public class VentanaMenu extends javax.swing.JFrame {
         initComponents();
     }
 
+    public void listenerButton(ActionListener action){
+        this.btnCapISO.addActionListener(action);
+        this.btnCapApertura.addActionListener(action);
+        this.btnCapDistFocal.addActionListener(action);
+        this.btnCapVelocidad.addActionListener(action);
+        this.btnCapProfundidad.addActionListener(action);
+        
+        this.btnInicio.addActionListener(action);
+        this.btnEvaluaciones.addActionListener(action);
+        
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -28,21 +41,71 @@ public class VentanaMenu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        btnCapISO = new javax.swing.JButton();
+        btnCapVelocidad = new javax.swing.JButton();
+        btnCapApertura = new javax.swing.JButton();
+        btnCapProfundidad = new javax.swing.JButton();
+        btnCapDistFocal = new javax.swing.JButton();
+        btnEvaluaciones = new javax.swing.JButton();
+        btnInicio = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btnCapISO.setText("Cap. 1 . ISO");
+        btnCapISO.setActionCommand("");
+        btnCapISO.addActionListener(this::btnCapISOActionPerformed);
+        getContentPane().add(btnCapISO, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 70, 200, -1));
+
+        btnCapVelocidad.setText("Cap. 2 . Velocidad");
+        btnCapVelocidad.setActionCommand("");
+        getContentPane().add(btnCapVelocidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 110, 200, -1));
+
+        btnCapApertura.setText("Cap. 3 . Apertura");
+        getContentPane().add(btnCapApertura, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 140, 200, -1));
+
+        btnCapProfundidad.setText("Cap . 4 . Profundidad de campo");
+        btnCapProfundidad.setActionCommand("");
+        btnCapProfundidad.addActionListener(this::btnCapProfundidadActionPerformed);
+        getContentPane().add(btnCapProfundidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 170, 200, -1));
+
+        btnCapDistFocal.setText("Cap . 5 . Distacia Focal");
+        btnCapDistFocal.addActionListener(this::btnCapDistFocalActionPerformed);
+        getContentPane().add(btnCapDistFocal, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 200, 200, -1));
+
+        btnEvaluaciones.setBackground(new java.awt.Color(182, 215, 182));
+        btnEvaluaciones.setForeground(new java.awt.Color(255, 255, 255));
+        btnEvaluaciones.setText("Resultados de evaluaciones");
+        getContentPane().add(btnEvaluaciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 233, -1, 20));
+
+        btnInicio.setBackground(new java.awt.Color(182, 215, 182));
+        btnInicio.setForeground(new java.awt.Color(255, 255, 255));
+        btnInicio.setText("Volver al inicio");
+        btnInicio.addActionListener(this::btnInicioActionPerformed);
+        getContentPane().add(btnInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 43, -1, 20));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Fondo_Menu_Capitulos_411x300.png"))); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnCapProfundidadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCapProfundidadActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCapProfundidadActionPerformed
+
+    private void btnCapDistFocalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCapDistFocalActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCapDistFocalActionPerformed
+
+    private void btnCapISOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCapISOActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCapISOActionPerformed
+
+    private void btnInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInicioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnInicioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -70,5 +133,13 @@ public class VentanaMenu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnCapApertura;
+    private javax.swing.JButton btnCapDistFocal;
+    private javax.swing.JButton btnCapISO;
+    private javax.swing.JButton btnCapProfundidad;
+    private javax.swing.JButton btnCapVelocidad;
+    private javax.swing.JButton btnEvaluaciones;
+    private javax.swing.JButton btnInicio;
+    private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }

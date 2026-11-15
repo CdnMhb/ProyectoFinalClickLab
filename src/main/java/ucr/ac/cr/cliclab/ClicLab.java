@@ -4,6 +4,8 @@
 
 package ucr.ac.cr.cliclab;
 
+import ucr.ac.cr.cliclab.controlador.ControladorMain;
+
 /**
  *
  * @author mathi
@@ -11,6 +13,7 @@ package ucr.ac.cr.cliclab;
 public class ClicLab {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        new ControladorMain();
+
     }
 }

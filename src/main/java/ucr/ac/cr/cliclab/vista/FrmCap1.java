@@ -6,16 +6,16 @@ package ucr.ac.cr.cliclab.vista;
 
 /**
  *
- * @author mathi
+ * @author jimes
  */
-public class VentanaPortada extends javax.swing.JFrame {
+public class FrmCap1 extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(VentanaPortada.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(FrmCap1.class.getName());
 
     /**
-     * Creates new form VentanaPortada
+     * Creates new form FrmCap1
      */
-    public VentanaPortada() {
+    public FrmCap1() {
         initComponents();
     }
 
@@ -66,7 +66,7 @@ public class VentanaPortada extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new VentanaPortada().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new FrmCap1().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
