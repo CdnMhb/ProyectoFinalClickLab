@@ -8,6 +8,7 @@ package ucr.ac.cr.cliclab.modelo;
  *
  * @author mathi
  */
-public class Evaluable {
-    
+public interface Evaluable {
+    boolean evaluar(String respuesta);
+    int getPuntaje();
 }

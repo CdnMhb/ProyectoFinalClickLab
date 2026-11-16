@@ -4,6 +4,9 @@
  */
 package ucr.ac.cr.cliclab.vista;
 
+import java.awt.event.ActionListener;
+import javax.swing.JRadioButton;
+
 /**
  *
  * @author mathi
@@ -15,9 +18,45 @@ public class VentanaActividad extends javax.swing.JFrame {
     /**
      * Creates new form VentanaPortada
      */
-    public VentanaActividad() {
-        initComponents();
+   public VentanaActividad() {
+    initComponents();
+    btnResponder.setActionCommand("Responder");
+    btnSiguiente.setActionCommand("Siguiente");
+}
+
+public void listenerButton(ActionListener l) {
+    btnResponder.addActionListener(l);
+    btnSiguiente.addActionListener(l);
+}
+
+public void mostrarActividad(String enunciado, String[] opciones) {
+    lblEnunciado.setText(enunciado);
+    JRadioButton[] radios = {rbOpcion1, rbOpcion2, rbOpcion3};
+    for (int i = 0; i < radios.length; i++) {
+        if (i < opciones.length) {
+            radios[i].setText(opciones[i]);
+            radios[i].setVisible(true);
+        } else {
+            radios[i].setVisible(false);   // verdadero/falso solo usa 2
+        }
     }
+    grupoOpciones.clearSelection();
+    lblRetroalimentacion.setText("");
+    btnResponder.setEnabled(true);
+}
+
+public String getSeleccion() {
+    if (rbOpcion1.isSelected()) return rbOpcion1.getText();
+    if (rbOpcion2.isSelected()) return rbOpcion2.getText();
+    if (rbOpcion3.isSelected()) return rbOpcion3.getText();
+    return null;   // no eligió nada
+}
+
+public void mostrarRetroalimentacion(boolean correcta, String explicacion) {
+    String titulo = correcta ? "¡Correcto! " : "Incorrecto. ";
+    lblRetroalimentacion.setText("<html>" + titulo + explicacion + "</html>");
+    btnResponder.setEnabled(false);   // evita contar dos veces
+}
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -28,24 +67,91 @@ public class VentanaActividad extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        grupoOpciones = new javax.swing.ButtonGroup();
+        lblEnunciado = new javax.swing.JLabel();
+        rbOpcion1 = new javax.swing.JRadioButton();
+        rbOpcion2 = new javax.swing.JRadioButton();
+        rbOpcion3 = new javax.swing.JRadioButton();
+        btnResponder = new javax.swing.JButton();
+        btnSiguiente = new javax.swing.JButton();
+        lblRetroalimentacion = new javax.swing.JLabel();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+
+        lblEnunciado.setText("jLabel1");
+
+        grupoOpciones.add(rbOpcion1);
+        rbOpcion1.setText("jRadioButton1");
+
+        rbOpcion2.setText("jRadioButton2");
+
+        grupoOpciones.add(rbOpcion3);
+        rbOpcion3.setText("jRadioButton3");
+
+        btnResponder.setText("Responder");
+
+        btnSiguiente.setText("Siguiente");
+        btnSiguiente.addActionListener(this::btnSiguienteActionPerformed);
+
+        lblRetroalimentacion.setText("jLabel1");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(50, 50, 50)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(rbOpcion2)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(btnResponder)
+                        .addComponent(rbOpcion3))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(lblEnunciado)
+                        .addComponent(rbOpcion1)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnSiguiente)
+                    .addComponent(lblRetroalimentacion))
+                .addGap(112, 112, 112))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(44, 44, 44)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblEnunciado)
+                    .addComponent(lblRetroalimentacion))
+                .addGap(32, 32, 32)
+                .addComponent(rbOpcion1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbOpcion2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rbOpcion3)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnResponder)
+                    .addComponent(btnSiguiente))
+                .addContainerGap(92, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void btnSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSiguienteActionPerformed
+
    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnResponder;
+    private javax.swing.JButton btnSiguiente;
+    private javax.swing.ButtonGroup grupoOpciones;
+    private javax.swing.JLabel lblEnunciado;
+    private javax.swing.JLabel lblRetroalimentacion;
+    private javax.swing.JRadioButton rbOpcion1;
+    private javax.swing.JRadioButton rbOpcion2;
+    private javax.swing.JRadioButton rbOpcion3;
     // End of variables declaration//GEN-END:variables
 }

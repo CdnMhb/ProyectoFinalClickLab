@@ -2,7 +2,7 @@
 
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
-    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -18,7 +18,7 @@
     <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="3"/>
     <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
     <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
-    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,1,28,0,0,1,-108"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,1,32,0,0,1,-101"/>
   </AuxValues>
 
   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
@@ -28,7 +28,7 @@
     <Component class="javax.swing.JButton" name="btnCapISO">
       <Properties>
         <Property name="text" type="java.lang.String" value="Cap. 1 . ISO"/>
-        <Property name="actionCommand" type="java.lang.String" value=""/>
+        <Property name="actionCommand" type="java.lang.String" value="Cap1"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCapISOActionPerformed"/>
@@ -42,7 +42,7 @@
     <Component class="javax.swing.JButton" name="btnCapVelocidad">
       <Properties>
         <Property name="text" type="java.lang.String" value="Cap. 2 . Velocidad"/>
-        <Property name="actionCommand" type="java.lang.String" value=""/>
+        <Property name="actionCommand" type="java.lang.String" value="Cap2"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -53,6 +53,7 @@
     <Component class="javax.swing.JButton" name="btnCapApertura">
       <Properties>
         <Property name="text" type="java.lang.String" value="Cap. 3 . Apertura"/>
+        <Property name="actionCommand" type="java.lang.String" value="Cap3"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -63,7 +64,7 @@
     <Component class="javax.swing.JButton" name="btnCapProfundidad">
       <Properties>
         <Property name="text" type="java.lang.String" value="Cap . 4 . Profundidad de campo"/>
-        <Property name="actionCommand" type="java.lang.String" value=""/>
+        <Property name="actionCommand" type="java.lang.String" value="Cap4"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCapProfundidadActionPerformed"/>
@@ -77,6 +78,7 @@
     <Component class="javax.swing.JButton" name="btnCapDistFocal">
       <Properties>
         <Property name="text" type="java.lang.String" value="Cap . 5 . Distacia Focal"/>
+        <Property name="actionCommand" type="java.lang.String" value="Cap5"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCapDistFocalActionPerformed"/>
@@ -96,6 +98,7 @@
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Resultados de evaluaciones"/>
+        <Property name="actionCommand" type="java.lang.String" value="Resultados"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -112,6 +115,7 @@
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Volver al inicio"/>
+        <Property name="actionCommand" type="java.lang.String" value="Inicio"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnInicioActionPerformed"/>

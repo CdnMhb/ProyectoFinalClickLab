@@ -4,21 +4,35 @@
  */
 package ucr.ac.cr.cliclab.vista;
 
+import java.awt.event.ActionListener;
+import javax.swing.JPanel;
+
 /**
  *
- * @author mathi
+ * @author jimes
  */
 public class VentanaCapitulo extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(VentanaCapitulo.class.getName());
 
     /**
-     * Creates new form VentanaPortada
+     * Creates new form VentanaCapitulo
      */
     public VentanaCapitulo() {
         initComponents();
     }
+public void listenerButton(ActionListener l) {
+    btnActividades.addActionListener(l);
+    btnVolver.addActionListener(l);
+}
 
+public void mostrarCapitulo(String titulo, JPanel panel) {
+    setTitle(titulo);
+    pnlContenido.removeAll();
+    pnlContenido.add(panel, java.awt.BorderLayout.CENTER);
+    pnlContenido.revalidate();
+    pnlContenido.repaint();
+}
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -28,27 +42,31 @@ public class VentanaCapitulo extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        pnlContenido = new javax.swing.JPanel();
+        btnVolver = new javax.swing.JButton();
+        btnActividades = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jLabel1.setText("INTRODUCIR CONTENIDO ACA");
+        pnlContenido.setLayout(new java.awt.BorderLayout());
+
+        btnVolver.setText("Volver al menú");
+        btnVolver.setActionCommand("VolverMenu");
+        pnlContenido.add(btnVolver, java.awt.BorderLayout.PAGE_START);
+
+        btnActividades.setText("Ir a actividades");
+        btnActividades.setActionCommand("Actividades");
+        pnlContenido.add(btnActividades, java.awt.BorderLayout.CENTER);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(158, 158, 158)
-                .addComponent(jLabel1)
-                .addContainerGap(75, Short.MAX_VALUE))
+            .addComponent(pnlContenido, javax.swing.GroupLayout.DEFAULT_SIZE, 702, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(102, 102, 102)
-                .addComponent(jLabel1)
-                .addContainerGap(182, Short.MAX_VALUE))
+            .addComponent(pnlContenido, javax.swing.GroupLayout.DEFAULT_SIZE, 473, Short.MAX_VALUE)
         );
 
         pack();
@@ -80,6 +98,8 @@ public class VentanaCapitulo extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton btnActividades;
+    private javax.swing.JButton btnVolver;
+    private javax.swing.JPanel pnlContenido;
     // End of variables declaration//GEN-END:variables
 }

@@ -50,38 +50,42 @@ public class VentanaMenu extends javax.swing.JFrame {
         btnInicio = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnCapISO.setText("Cap. 1 . ISO");
-        btnCapISO.setActionCommand("");
+        btnCapISO.setActionCommand("Cap1");
         btnCapISO.addActionListener(this::btnCapISOActionPerformed);
         getContentPane().add(btnCapISO, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 70, 200, -1));
 
         btnCapVelocidad.setText("Cap. 2 . Velocidad");
-        btnCapVelocidad.setActionCommand("");
+        btnCapVelocidad.setActionCommand("Cap2");
         getContentPane().add(btnCapVelocidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 110, 200, -1));
 
         btnCapApertura.setText("Cap. 3 . Apertura");
+        btnCapApertura.setActionCommand("Cap3");
         getContentPane().add(btnCapApertura, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 140, 200, -1));
 
         btnCapProfundidad.setText("Cap . 4 . Profundidad de campo");
-        btnCapProfundidad.setActionCommand("");
+        btnCapProfundidad.setActionCommand("Cap4");
         btnCapProfundidad.addActionListener(this::btnCapProfundidadActionPerformed);
         getContentPane().add(btnCapProfundidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 170, 200, -1));
 
         btnCapDistFocal.setText("Cap . 5 . Distacia Focal");
+        btnCapDistFocal.setActionCommand("Cap5");
         btnCapDistFocal.addActionListener(this::btnCapDistFocalActionPerformed);
         getContentPane().add(btnCapDistFocal, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 200, 200, -1));
 
         btnEvaluaciones.setBackground(new java.awt.Color(182, 215, 182));
         btnEvaluaciones.setForeground(new java.awt.Color(255, 255, 255));
         btnEvaluaciones.setText("Resultados de evaluaciones");
+        btnEvaluaciones.setActionCommand("Resultados");
         getContentPane().add(btnEvaluaciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 233, -1, 20));
 
         btnInicio.setBackground(new java.awt.Color(182, 215, 182));
         btnInicio.setForeground(new java.awt.Color(255, 255, 255));
         btnInicio.setText("Volver al inicio");
+        btnInicio.setActionCommand("Inicio");
         btnInicio.addActionListener(this::btnInicioActionPerformed);
         getContentPane().add(btnInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 43, -1, 20));
 
@@ -110,27 +114,7 @@ public class VentanaMenu extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ReflectiveOperationException | javax.swing.UnsupportedLookAndFeelException ex) {
-            logger.log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new VentanaMenu().setVisible(true));
-    }
+   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCapApertura;

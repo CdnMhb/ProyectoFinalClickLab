@@ -8,6 +8,8 @@ import ucr.ac.cr.cliclab.vista.VentanaMenu;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
+import ucr.ac.cr.cliclab.modelo.Capitulo;
+import ucr.ac.cr.cliclab.modelo.RegistroCapitulo;
 
 /**
  *
@@ -18,14 +20,24 @@ public class ControladorMain implements ActionListener{
      private FrmMain frmMain;
      private VentanaMenu ventanaMenu;
      
-     public ControladorMain(){
-        this.frmMain=new FrmMain();
-        this.frmMain.setVisible(true);
-        this.frmMain.listenerMenu(this);
-        
-        this.ventanaMenu=new VentanaMenu();
-       
-    }
+    public ControladorMain() {
+    this.frmMain = new FrmMain();
+    this.frmMain.setVisible(true);
+    this.frmMain.listenerMenu(this);
+
+    this.ventanaMenu = new VentanaMenu();
+
+    RegistroCapitulo registroCapitulo = new RegistroCapitulo();
+    registroCapitulo.agregar(new Capitulo(1, "Capítulo 1: ISO",
+            "Entender cómo el ISO cambia la luz y el ruido de la foto"));
+    registroCapitulo.agregar(new Capitulo(2, "Capítulo 2: Velocidad",
+            "Entender cómo la velocidad congela o difumina el movimiento"));
+    registroCapitulo.agregar(new Capitulo(3, "Capítulo 3: Apertura",
+            "Entender cómo la apertura controla la luz y el desenfoque"));
+
+    ControladorCapitulo ctrlCapitulo = new ControladorCapitulo(this.ventanaMenu, registroCapitulo, null);
+    new ControladorMenuLibro(this.ventanaMenu, ctrlCapitulo);
+}
     @Override
     public void actionPerformed(ActionEvent e) {
     switch (e.getActionCommand()) {
@@ -36,7 +48,7 @@ public class ControladorMain implements ActionListener{
 //                    new ControllerBook(this.registerBook);
                    
                    this.ventanaMenu.setVisible(true);
-        this.ventanaMenu.listenerButton(this);
+       
                     break;
                 
             default:

@@ -8,6 +8,23 @@ package ucr.ac.cr.cliclab.modelo;
  *
  * @author mathi
  */
-public class Actividad {
-    
+public abstract class Actividad extends Contenido implements Evaluable {
+    private String enunciado;
+    private int puntos;
+    private int numeroCapitulo;
+
+    public Actividad(String titulo, String explicacion, String enunciado,
+                     int puntos, int numeroCapitulo) {
+        super(titulo, explicacion);   // descripcion = explicación de la respuesta
+        this.enunciado = enunciado;
+        this.puntos = puntos;
+        this.numeroCapitulo = numeroCapitulo;
+    }
+
+    public String getEnunciado() { return enunciado; }
+    public int getNumeroCapitulo() { return numeroCapitulo; }
+    public int getPuntaje() { return puntos; }
+
+    // Cada hija decide qué opciones muestra
+    public abstract String[] getOpciones();
 }
