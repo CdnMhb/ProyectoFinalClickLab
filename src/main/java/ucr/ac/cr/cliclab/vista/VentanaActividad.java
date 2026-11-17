@@ -117,7 +117,7 @@ public void mostrarRetroalimentacion(boolean correcta, String explicacion) {
                         .addGap(92, 92, 92))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(lblRetroalimentacion, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(70, Short.MAX_VALUE))))
+                        .addContainerGap(80, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

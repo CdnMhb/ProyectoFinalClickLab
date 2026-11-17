@@ -48,7 +48,7 @@
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="lblRetroalimentacion" min="-2" pref="298" max="-2" attributes="0"/>
-                      <EmptySpace pref="70" max="32767" attributes="0"/>
+                      <EmptySpace pref="80" max="32767" attributes="0"/>
                   </Group>
               </Group>
           </Group>
