@@ -83,6 +83,7 @@ public void mostrarRetroalimentacion(boolean correcta, String explicacion) {
         grupoOpciones.add(rbOpcion1);
         rbOpcion1.setText("jRadioButton1");
 
+        grupoOpciones.add(rbOpcion2);
         rbOpcion2.setText("jRadioButton2");
 
         grupoOpciones.add(rbOpcion3);
@@ -101,38 +102,41 @@ public void mostrarRetroalimentacion(boolean correcta, String explicacion) {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(50, 50, 50)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(rbOpcion2)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(btnResponder)
-                        .addComponent(rbOpcion3))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(lblEnunciado)
-                        .addComponent(rbOpcion1)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 79, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnSiguiente)
-                    .addComponent(lblRetroalimentacion))
-                .addGap(112, 112, 112))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(rbOpcion2)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(btnResponder)
+                                .addComponent(rbOpcion3))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(lblEnunciado)
+                                .addComponent(rbOpcion1)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnSiguiente)
+                        .addGap(92, 92, 92))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(lblRetroalimentacion, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(70, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(44, 44, 44)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblEnunciado)
-                    .addComponent(lblRetroalimentacion))
-                .addGap(32, 32, 32)
+                .addContainerGap(11, Short.MAX_VALUE)
+                .addComponent(lblRetroalimentacion, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(lblEnunciado)
+                .addGap(18, 18, 18)
                 .addComponent(rbOpcion1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rbOpcion2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rbOpcion3)
-                .addGap(18, 18, 18)
+                .addGap(32, 32, 32)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnResponder)
                     .addComponent(btnSiguiente))
-                .addContainerGap(92, Short.MAX_VALUE))
+                .addGap(28, 28, 28))
         );
 
         pack();

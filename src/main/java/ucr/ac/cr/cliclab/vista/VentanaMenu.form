@@ -77,7 +77,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnCapDistFocal">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Cap . 5 . Distacia Focal"/>
+        <Property name="text" type="java.lang.String" value="Cap . 5 . Distancia Focal"/>
         <Property name="actionCommand" type="java.lang.String" value="Cap5"/>
       </Properties>
       <Events>

@@ -71,7 +71,7 @@ public class VentanaMenu extends javax.swing.JFrame {
         btnCapProfundidad.addActionListener(this::btnCapProfundidadActionPerformed);
         getContentPane().add(btnCapProfundidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 170, 200, -1));
 
-        btnCapDistFocal.setText("Cap . 5 . Distacia Focal");
+        btnCapDistFocal.setText("Cap . 5 . Distancia Focal");
         btnCapDistFocal.setActionCommand("Cap5");
         btnCapDistFocal.addActionListener(this::btnCapDistFocalActionPerformed);
         getContentPane().add(btnCapDistFocal, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 200, 200, -1));

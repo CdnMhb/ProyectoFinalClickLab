@@ -41,4 +41,9 @@ public class RegistroActividad {
                 "Con mucha luz basta un ISO bajo, y la foto sale más limpia.",
                 "Con mucha luz conviene usar un ISO bajo.", 10, 1, true));
     }
+        
+        
+        
+        
+        
 }
