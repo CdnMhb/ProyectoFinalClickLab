@@ -40,6 +40,8 @@ public class PanelCap1 extends javax.swing.JPanel {
         jScrollPane4 = new javax.swing.JScrollPane();
         jTextArea4 = new javax.swing.JTextArea();
         jLabel5 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jLabel7 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -58,7 +60,7 @@ public class PanelCap1 extends javax.swing.JPanel {
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, -1, 113));
 
         jLabel2.setText("Valores comunes:");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 70, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 70, -1, -1));
 
         jTextArea2.setEditable(false);
         jTextArea2.setBackground(new java.awt.Color(240, 240, 219));
@@ -69,7 +71,7 @@ public class PanelCap1 extends javax.swing.JPanel {
         jTextArea2.setWrapStyleWord(true);
         jScrollPane2.setViewportView(jTextArea2);
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 100, -1, 120));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 100, -1, 120));
 
         jLabel3.setText("Ejemplo práctico:");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 240, -1, -1));
@@ -100,18 +102,33 @@ public class PanelCap1 extends javax.swing.JPanel {
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/ClickLab_ISO_128x278.png"))); // NOI18N
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 90, -1, 290));
 
+        jButton1.setText("Ir a las actividades");
+        jButton1.addActionListener(this::jButton1ActionPerformed);
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 420, -1, -1));
+
+        jLabel7.setBackground(new java.awt.Color(204, 255, 204));
+        jLabel7.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
+        jLabel7.setText("CAPITULO 1: ISO");
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 20, 230, 30));
+
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/ClickLab_Fondo_702x472.png"))); // NOI18N
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 480));
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
