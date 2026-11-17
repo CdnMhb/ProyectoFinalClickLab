@@ -117,7 +117,7 @@ public class PanelCap1 extends javax.swing.JPanel {
         jLabel7.setBackground(new java.awt.Color(204, 255, 204));
         jLabel7.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel7.setText("CAPITULO 1: ISO");
-        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 230, 50));
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 420, 50));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/ClickLab_Fondo_702x472.png"))); // NOI18N
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 480));

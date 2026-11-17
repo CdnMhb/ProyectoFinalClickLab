@@ -18,20 +18,20 @@ public class VentanaCapitulo extends javax.swing.JFrame {
     /**
      * Creates new form VentanaCapitulo
      */
-    public VentanaCapitulo() {
-        initComponents();
-    }
+   public VentanaCapitulo() {
+    initComponents();
+    pnlTeoria.setLayout(new java.awt.BorderLayout());
+}
 public void listenerButton(ActionListener l) {
     btnActividades.addActionListener(l);
     btnVolver.addActionListener(l);
 }
-
 public void mostrarCapitulo(String titulo, JPanel panel) {
     setTitle(titulo);
-    pnlContenido.removeAll();
-    pnlContenido.add(panel, java.awt.BorderLayout.CENTER);
-    pnlContenido.revalidate();
-    pnlContenido.repaint();
+    pnlTeoria.removeAll();
+    pnlTeoria.add(panel, java.awt.BorderLayout.CENTER);
+    pnlTeoria.revalidate();
+    pnlTeoria.repaint();
 }
     /**
      * This method is called from within the constructor to initialize the form.
@@ -43,30 +43,51 @@ public void mostrarCapitulo(String titulo, JPanel panel) {
     private void initComponents() {
 
         pnlContenido = new javax.swing.JPanel();
-        btnVolver = new javax.swing.JButton();
         btnActividades = new javax.swing.JButton();
+        btnVolver = new javax.swing.JButton();
+        pnlTeoria = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         pnlContenido.setLayout(new java.awt.BorderLayout());
 
-        btnVolver.setText("Volver al menú");
-        btnVolver.setActionCommand("VolverMenu");
-        pnlContenido.add(btnVolver, java.awt.BorderLayout.PAGE_START);
-
+        btnActividades.setBackground(new java.awt.Color(182, 215, 182));
+        btnActividades.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnActividades.setForeground(new java.awt.Color(255, 255, 255));
         btnActividades.setText("Ir a actividades");
         btnActividades.setActionCommand("Actividades");
-        pnlContenido.add(btnActividades, java.awt.BorderLayout.CENTER);
+        pnlContenido.add(btnActividades, java.awt.BorderLayout.PAGE_END);
+
+        btnVolver.setBackground(new java.awt.Color(182, 215, 182));
+        btnVolver.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnVolver.setForeground(new java.awt.Color(255, 255, 255));
+        btnVolver.setText("Volver al menú");
+        btnVolver.setActionCommand("VolverMenu");
+        btnVolver.setFocusPainted(false);
+        pnlContenido.add(btnVolver, java.awt.BorderLayout.PAGE_START);
+
+        javax.swing.GroupLayout pnlTeoriaLayout = new javax.swing.GroupLayout(pnlTeoria);
+        pnlTeoria.setLayout(pnlTeoriaLayout);
+        pnlTeoriaLayout.setHorizontalGroup(
+            pnlTeoriaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 702, Short.MAX_VALUE)
+        );
+        pnlTeoriaLayout.setVerticalGroup(
+            pnlTeoriaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 472, Short.MAX_VALUE)
+        );
+
+        pnlContenido.add(pnlTeoria, java.awt.BorderLayout.CENTER);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(pnlContenido, javax.swing.GroupLayout.DEFAULT_SIZE, 702, Short.MAX_VALUE)
+            .addComponent(pnlContenido, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(pnlContenido, javax.swing.GroupLayout.DEFAULT_SIZE, 473, Short.MAX_VALUE)
+            .addComponent(pnlContenido, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -101,5 +122,6 @@ public void mostrarCapitulo(String titulo, JPanel panel) {
     private javax.swing.JButton btnActividades;
     private javax.swing.JButton btnVolver;
     private javax.swing.JPanel pnlContenido;
+    private javax.swing.JPanel pnlTeoria;
     // End of variables declaration//GEN-END:variables
 }

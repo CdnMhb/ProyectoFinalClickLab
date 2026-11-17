@@ -4,6 +4,8 @@
  */
 package ucr.ac.cr.cliclab.vista;
 
+import java.awt.event.ActionListener;
+
 /**
  *
  * @author mathi
@@ -18,6 +20,14 @@ public class VentanaResultados extends javax.swing.JFrame {
     public VentanaResultados() {
         initComponents();
     }
+    public void listenerButton(ActionListener l) {
+    btnNuevoIntento.addActionListener(l);
+    btnVolver.addActionListener(l);
+}
+
+public void mostrarResumen(String texto) {
+    txtResumen.setText(texto);
+}
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -28,17 +38,47 @@ public class VentanaResultados extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        scrollPane1 = new java.awt.ScrollPane();
+        txtResumen = new java.awt.TextArea();
+        btnNuevoIntento = new javax.swing.JButton();
+        btnVolver = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+
+        txtResumen.setEditable(false);
+        txtResumen.setFont(new java.awt.Font("Dialog", 0, 16)); // NOI18N
+        scrollPane1.add(txtResumen);
+
+        btnNuevoIntento.setText("Nuevo intento");
+        btnNuevoIntento.setActionCommand("NuevoIntento");
+
+        btnVolver.setText("Volver al menú");
+        btnVolver.setActionCommand("VolverMenu");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(43, 43, 43)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(scrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 689, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btnVolver, javax.swing.GroupLayout.PREFERRED_SIZE, 325, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(57, 57, 57)
+                        .addComponent(btnNuevoIntento, javax.swing.GroupLayout.PREFERRED_SIZE, 307, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(24, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnVolver)
+                    .addComponent(btnNuevoIntento))
+                .addGap(23, 23, 23)
+                .addComponent(scrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 343, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(61, Short.MAX_VALUE))
         );
 
         pack();
@@ -50,5 +90,9 @@ public class VentanaResultados extends javax.swing.JFrame {
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnNuevoIntento;
+    private javax.swing.JButton btnVolver;
+    private java.awt.ScrollPane scrollPane1;
+    private java.awt.TextArea txtResumen;
     // End of variables declaration//GEN-END:variables
 }

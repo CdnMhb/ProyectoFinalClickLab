@@ -8,8 +8,10 @@ import ucr.ac.cr.cliclab.vista.VentanaMenu;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
+import ucr.ac.cr.cliclab.modelo.RegistroActividad;
 import ucr.ac.cr.cliclab.modelo.Capitulo;
 import ucr.ac.cr.cliclab.modelo.RegistroCapitulo;
+import ucr.ac.cr.cliclab.modelo.RegistroResultados;
 
 /**
  *
@@ -35,8 +37,14 @@ public class ControladorMain implements ActionListener{
     registroCapitulo.agregar(new Capitulo(3, "Capítulo 3: Apertura",
             "Entender cómo la apertura controla la luz y el desenfoque"));
 
-    ControladorCapitulo ctrlCapitulo = new ControladorCapitulo(this.ventanaMenu, registroCapitulo, null);
-    new ControladorMenuLibro(this.ventanaMenu, ctrlCapitulo);
+    
+    RegistroActividad registroActividad = new RegistroActividad();
+        registroActividad.cargarActividades();
+        RegistroResultados resultados = new RegistroResultados(5, 5);
+    ControladorResultados ctrlResultados = new ControladorResultados(this.ventanaMenu, resultados);
+    ControladorActividad ctrlActividad = new ControladorActividad(registroActividad, resultados, ctrlResultados);
+    ControladorCapitulo ctrlCapitulo = new ControladorCapitulo(this.ventanaMenu, registroCapitulo, ctrlActividad);
+    new ControladorMenuLibro(this.ventanaMenu, ctrlCapitulo, ctrlResultados);
 }
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -58,25 +66,6 @@ public class ControladorMain implements ActionListener{
     
     
     
-//    public void actionPerformed(ActionEvent e) {
-//        switch (e.getActionCommand()) {
-//            case "Exit":
-//                System.exit(0);
-//                break;
-//                case"Book":
-//                    new ControllerBook(this.registerBook);
-//                    break;
-//                case "Page":
-//                    //crear controllador de la pagina
-//                    //poner this.el refistro q cree arriba al llamarlo
-//                    new ControllerPage(this.registerPage);
-//                    
-//                    
-//                    break;
-//                
-//            default:
-//                throw new AssertionError();
-//        }
-//    }
+
     
 }

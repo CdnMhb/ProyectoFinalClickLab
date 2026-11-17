@@ -49,4 +49,43 @@ public class RegistroResultados {
             }
         }
     }
+    
+    public int getRespondidas(int cap) {
+        int total = 0;
+        for (int j = 0; j < estado[cap].length; j++) {
+            if (estado[cap][j] != 0) {
+                total++;
+            }
+        }
+        return total;
+    }
+    
+     public int getErrores(int cap) {
+        return getRespondidas(cap) - getAciertos(cap);
+    }
+     public int getTotalRespondidas() {
+        int total = 0;
+        for (int i = 0; i < estado.length; i++) {
+            total += getRespondidas(i);
+        }
+        return total;
+    }
+     
+      public int getTotalAciertos() {
+        int total = 0;
+        for (int i = 0; i < estado.length; i++) {
+            total += getAciertos(i);
+        }
+        return total;
+    }
+      
+      
+      
+       public double getPorcentaje() {
+        int respondidas = getTotalRespondidas();
+        if (respondidas == 0) {
+            return 0;
+        }
+        return getTotalAciertos() * 100.0 / respondidas;
+    }
 }

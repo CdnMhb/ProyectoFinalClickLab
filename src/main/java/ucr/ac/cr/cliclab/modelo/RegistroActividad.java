@@ -30,4 +30,15 @@ public class RegistroActividad {
         }
         return resultado;
     }
+        public void cargarActividades() {
+        agregar(new ActividadSeleccionUnica("ISO 1",
+                "Un ISO alto hace el sensor más sensible a la luz, pero agrega ruido.",
+                "¿Qué pasa si subes el ISO?", 10, 1,
+                new String[]{"La imagen se aclara y aparece ruido", "La imagen se oscurece", "No cambia nada"},
+                "La imagen se aclara y aparece ruido"));
+
+        agregar(new ActividadVerdaderoFalso("ISO 2",
+                "Con mucha luz basta un ISO bajo, y la foto sale más limpia.",
+                "Con mucha luz conviene usar un ISO bajo.", 10, 1, true));
+    }
 }

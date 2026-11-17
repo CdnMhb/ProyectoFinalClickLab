@@ -20,11 +20,14 @@ public class ControladorMenuLibro implements ActionListener {
 
     private VentanaMenu ventanaMenu;
     private ControladorCapitulo controladorCapitulo;
+    private ControladorResultados controladorResultados;
 
-    public ControladorMenuLibro(VentanaMenu ventanaMenu, ControladorCapitulo controladorCapitulo) {
+    public ControladorMenuLibro(VentanaMenu ventanaMenu, ControladorCapitulo controladorCapitulo, ControladorResultados controladorResultados) {
         this.ventanaMenu = ventanaMenu;
         this.controladorCapitulo = controladorCapitulo;
+        this.controladorResultados = controladorResultados;
         this.ventanaMenu.listenerButton(this);
+        
     }
 
     @Override
@@ -36,7 +39,7 @@ public class ControladorMenuLibro implements ActionListener {
             case "Cap4": controladorCapitulo.abrir(4); break;
             case "Cap5": controladorCapitulo.abrir(5); break;
             case "Resultados":
-                JOptionPane.showMessageDialog(null, "Resultados: pendiente");
+               controladorResultados.mostrar();
                 break;
             case "Inicio":
                 this.ventanaMenu.setVisible(false);

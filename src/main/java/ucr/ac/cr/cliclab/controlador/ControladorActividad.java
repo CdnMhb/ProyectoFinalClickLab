@@ -17,7 +17,7 @@ import ucr.ac.cr.cliclab.vista.VentanaActividad;
  * @author jimes
  */
 public class ControladorActividad implements ActionListener {
-
+    private ControladorResultados controladorResultados;
     private VentanaActividad ventana;
     private RegistroActividad registroActividad;
     private RegistroResultados resultados;
@@ -26,16 +26,17 @@ public class ControladorActividad implements ActionListener {
     private int indice;
     private boolean respondida;
 
-    public ControladorActividad(RegistroActividad ra, RegistroResultados rr) {
+    public ControladorActividad(RegistroActividad ra, RegistroResultados rr, ControladorResultados cr) {
         this.registroActividad = ra;
         this.resultados = rr;
+        this.controladorResultados = cr;
         this.ventana = new VentanaActividad();
         this.ventana.listenerButton(this);
     }
 
     public void iniciar(int capitulo) {
         this.capitulo = capitulo;
-//        this.actuales = registroActividad.getPorCapitulo(capitulo);
+        this.actuales = registroActividad.getPorCapitulo(capitulo);
         this.indice = 0;
         if (actuales.isEmpty()) {
             JOptionPane.showMessageDialog(null, "Este capítulo aún no tiene actividades");
@@ -76,7 +77,7 @@ public class ControladorActividad implements ActionListener {
         }
         Actividad a = actuales.get(indice);
         boolean correcta = a.evaluar(seleccion);       // polimorfismo
-//        resultados.registrar(capitulo - 1, indice, correcta);
+        resultados.registrar(capitulo - 1, indice, correcta);
         ventana.mostrarRetroalimentacion(correcta, a.getDescripcion());
         respondida = true;
     }
@@ -91,8 +92,8 @@ public class ControladorActividad implements ActionListener {
             mostrar();
         } else {
             ventana.setVisible(false);
-//            JOptionPane.showMessageDialog(null, "Terminaste. Aciertos: "
-//                    + resultados.getAciertos(capitulo - 1));   // luego se cambia por VentanaResultados
+          ventana.setVisible(false);
+    controladorResultados.mostrar();  // luego se cambia por VentanaResultados
         }
     }
 }
