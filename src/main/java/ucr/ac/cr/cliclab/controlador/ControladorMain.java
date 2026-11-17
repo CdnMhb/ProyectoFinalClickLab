@@ -36,7 +36,10 @@ public class ControladorMain implements ActionListener{
             "Entender cómo la velocidad congela o difumina el movimiento"));
     registroCapitulo.agregar(new Capitulo(3, "Capítulo 3: Apertura",
             "Entender cómo la apertura controla la luz y el desenfoque"));
-
+    registroCapitulo.agregar(new Capitulo(4, "Capítulo 4: Profundidad de campo",
+            "Es la distancia entre los elementos más cercanos y más lejanos que aparecen aceptablemente enfocados en una fotografía."));
+    registroCapitulo.agregar(new Capitulo(5, "Capítulo 5: Distancia Focal",
+            "Es una característica óptica del lente que se mide en milímetros (mm) y determina principalmente el ángulo de visión y el tamaño con el que aparecen los objetos en la imagen."));
     
     RegistroActividad registroActividad = new RegistroActividad();
         registroActividad.cargarActividades();

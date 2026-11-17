@@ -77,67 +77,32 @@ public void mostrarRetroalimentacion(boolean correcta, String explicacion) {
         lblRetroalimentacion = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblEnunciado.setText("jLabel1");
+        getContentPane().add(lblEnunciado, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 108, -1, -1));
 
         grupoOpciones.add(rbOpcion1);
         rbOpcion1.setText("jRadioButton1");
+        getContentPane().add(rbOpcion1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 142, -1, -1));
 
         grupoOpciones.add(rbOpcion2);
         rbOpcion2.setText("jRadioButton2");
+        getContentPane().add(rbOpcion2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 169, -1, -1));
 
         grupoOpciones.add(rbOpcion3);
         rbOpcion3.setText("jRadioButton3");
+        getContentPane().add(rbOpcion3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 196, -1, -1));
 
         btnResponder.setText("Responder");
+        getContentPane().add(btnResponder, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 249, -1, -1));
 
         btnSiguiente.setText("Siguiente");
         btnSiguiente.addActionListener(this::btnSiguienteActionPerformed);
+        getContentPane().add(btnSiguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(257, 249, -1, -1));
 
         lblRetroalimentacion.setText("jLabel1");
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(50, 50, 50)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(rbOpcion2)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(btnResponder)
-                                .addComponent(rbOpcion3))
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(lblEnunciado)
-                                .addComponent(rbOpcion1)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnSiguiente)
-                        .addGap(92, 92, 92))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(lblRetroalimentacion, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(80, Short.MAX_VALUE))))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap(11, Short.MAX_VALUE)
-                .addComponent(lblRetroalimentacion, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(lblEnunciado)
-                .addGap(18, 18, 18)
-                .addComponent(rbOpcion1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(rbOpcion2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(rbOpcion3)
-                .addGap(32, 32, 32)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnResponder)
-                    .addComponent(btnSiguiente))
-                .addGap(28, 28, 28))
-        );
+        getContentPane().add(lblRetroalimentacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 11, 298, 79));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
