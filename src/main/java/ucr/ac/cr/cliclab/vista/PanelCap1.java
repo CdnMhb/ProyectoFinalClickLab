@@ -40,56 +40,68 @@ public class PanelCap1 extends javax.swing.JPanel {
         jScrollPane4 = new javax.swing.JScrollPane();
         jTextArea4 = new javax.swing.JTextArea();
         jLabel5 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel1.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 102, 51));
         jLabel1.setText("¿Qué es el ISO?");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 60, -1, 20));
+
+        jScrollPane1.setBackground(new java.awt.Color(240, 240, 219));
 
         jTextArea1.setEditable(false);
+        jTextArea1.setBackground(new java.awt.Color(240, 240, 219));
         jTextArea1.setColumns(20);
         jTextArea1.setLineWrap(true);
         jTextArea1.setRows(5);
-        jTextArea1.setText("El ISO es un ajuste de la cámara que controla la sensibilidad utilizada para obtener una imagen con mayor o menor brillo.  Un ISO bajo produce imágenes más limpias, mientras que un ISO alto permite trabajar en lugares oscuros, pero puede generar ruido digital.");
+        jTextArea1.setText("El ISO es un ajuste de la cámara que controla la sensibilidad utilizada para obtener una imagen con mayor o menor brillo.  \n\nUn ISO bajo produce imágenes más limpias, mientras que un ISO alto permite trabajar en lugares oscuros, pero puede generar ruido digital.");
         jTextArea1.setWrapStyleWord(true);
         jScrollPane1.setViewportView(jTextArea1);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, -1, 113));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, 260, 140));
 
+        jLabel2.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 102, 51));
         jLabel2.setText("Valores comunes:");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 70, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 60, 150, 30));
 
         jTextArea2.setEditable(false);
         jTextArea2.setBackground(new java.awt.Color(240, 240, 219));
         jTextArea2.setColumns(20);
         jTextArea2.setLineWrap(true);
         jTextArea2.setRows(5);
-        jTextArea2.setText("ISO 100–200: ideal para exteriores con mucha luz.  \n  ISO 400–800: útil en interiores iluminados.  \n  ISO 1600 o más: permite fotografiar con poca luz, pero puede aumentar el ruido");
+        jTextArea2.setText("ISO 100–200: ideal para exteriores con mucha luz.  \n\n ISO 400–800: útil en interiores iluminados.  \n\nISO 1600 o más: permite fotografiar con poca luz, pero puede aumentar el ruido.");
         jTextArea2.setWrapStyleWord(true);
         jScrollPane2.setViewportView(jTextArea2);
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 100, -1, 120));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 90, 240, 140));
 
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 102, 51));
         jLabel3.setText("Ejemplo práctico:");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 240, -1, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 250, -1, 30));
 
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 102, 51));
         jLabel4.setText("Recordá:");
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, -1, -1));
 
         jTextArea3.setEditable(false);
+        jTextArea3.setBackground(new java.awt.Color(240, 240, 219));
         jTextArea3.setColumns(20);
         jTextArea3.setLineWrap(true);
         jTextArea3.setRows(5);
-        jTextArea3.setText("Si fotografiás un paisaje soleado, podés utilizar ISO 100. Si estás en una habitación oscura, probablemente necesités subirlo.");
+        jTextArea3.setText("Si fotografiás un paisaje soleado, podés utilizar ISO 100. \nSi estás en una habitación oscura, probablemente necesités subirlo.");
         jTextArea3.setWrapStyleWord(true);
         jScrollPane3.setViewportView(jTextArea3);
 
-        add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 260, 420, 40));
+        add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 250, 310, 40));
 
         jTextArea4.setEditable(false);
+        jTextArea4.setBackground(new java.awt.Color(240, 240, 219));
         jTextArea4.setColumns(20);
         jTextArea4.setLineWrap(true);
         jTextArea4.setRows(5);
@@ -97,31 +109,22 @@ public class PanelCap1 extends javax.swing.JPanel {
         jTextArea4.setWrapStyleWord(true);
         jScrollPane4.setViewportView(jTextArea4);
 
-        add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 330, 410, 40));
+        add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 330, 330, 40));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/ClickLab_ISO_128x278.png"))); // NOI18N
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 90, -1, 290));
 
-        jButton1.setText("Ir a las actividades");
-        jButton1.addActionListener(this::jButton1ActionPerformed);
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 420, -1, -1));
-
         jLabel7.setBackground(new java.awt.Color(204, 255, 204));
         jLabel7.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel7.setText("CAPITULO 1: ISO");
-        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 20, 230, 30));
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 230, 50));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/ClickLab_Fondo_702x472.png"))); // NOI18N
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 480));
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
