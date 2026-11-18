@@ -53,44 +53,51 @@ public class VentanaMenu extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        btnCapISO.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnCapISO.setText("Cap. 1 . ISO");
         btnCapISO.setActionCommand("Cap1");
         btnCapISO.addActionListener(this::btnCapISOActionPerformed);
-        getContentPane().add(btnCapISO, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 70, 200, -1));
+        getContentPane().add(btnCapISO, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 160, 420, 40));
 
+        btnCapVelocidad.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnCapVelocidad.setText("Cap. 2 . Velocidad");
         btnCapVelocidad.setActionCommand("Cap2");
-        getContentPane().add(btnCapVelocidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 110, 200, -1));
+        getContentPane().add(btnCapVelocidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 220, 420, 40));
 
+        btnCapApertura.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnCapApertura.setText("Cap. 3 . Apertura");
         btnCapApertura.setActionCommand("Cap3");
-        getContentPane().add(btnCapApertura, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 140, 200, -1));
+        getContentPane().add(btnCapApertura, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 290, 420, 40));
 
+        btnCapProfundidad.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnCapProfundidad.setText("Cap . 4 . Profundidad de campo");
         btnCapProfundidad.setActionCommand("Cap4");
         btnCapProfundidad.addActionListener(this::btnCapProfundidadActionPerformed);
-        getContentPane().add(btnCapProfundidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 170, 200, -1));
+        getContentPane().add(btnCapProfundidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 360, 420, 40));
 
+        btnCapDistFocal.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnCapDistFocal.setText("Cap . 5 . Distancia Focal");
         btnCapDistFocal.setActionCommand("Cap5");
         btnCapDistFocal.addActionListener(this::btnCapDistFocalActionPerformed);
-        getContentPane().add(btnCapDistFocal, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 200, 200, -1));
+        getContentPane().add(btnCapDistFocal, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 430, 420, 40));
 
         btnEvaluaciones.setBackground(new java.awt.Color(182, 215, 182));
+        btnEvaluaciones.setFont(new java.awt.Font("Segoe UI", 2, 18)); // NOI18N
         btnEvaluaciones.setForeground(new java.awt.Color(255, 255, 255));
         btnEvaluaciones.setText("Resultados de evaluaciones");
         btnEvaluaciones.setActionCommand("Resultados");
-        getContentPane().add(btnEvaluaciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 233, -1, 20));
+        getContentPane().add(btnEvaluaciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 490, -1, 20));
 
         btnInicio.setBackground(new java.awt.Color(182, 215, 182));
+        btnInicio.setFont(new java.awt.Font("Segoe UI", 2, 18)); // NOI18N
         btnInicio.setForeground(new java.awt.Color(255, 255, 255));
         btnInicio.setText("Volver al inicio");
         btnInicio.setActionCommand("Inicio");
         btnInicio.addActionListener(this::btnInicioActionPerformed);
-        getContentPane().add(btnInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 43, -1, 20));
+        getContentPane().add(btnInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 110, 240, 20));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Fondo_Menu_Capitulos_411x300.png"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Fondo_Menu_Capitulos_880x600.png"))); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, 600));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

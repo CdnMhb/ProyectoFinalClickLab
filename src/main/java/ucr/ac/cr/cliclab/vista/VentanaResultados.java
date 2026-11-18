@@ -44,45 +44,34 @@ public void mostrarResumen(String texto) {
         btnVolver = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         txtResumen.setEditable(false);
         txtResumen.setFont(new java.awt.Font("Dialog", 0, 16)); // NOI18N
         scrollPane1.add(txtResumen);
 
-        btnNuevoIntento.setText("Nuevo intento");
-        btnNuevoIntento.setActionCommand("NuevoIntento");
+        getContentPane().add(scrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 76, 827, 524));
 
+        btnNuevoIntento.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        btnNuevoIntento.setForeground(new java.awt.Color(255, 0, 0));
+        btnNuevoIntento.setText("Borrar todos los intentos anteriores");
+        btnNuevoIntento.setActionCommand("NuevoIntento");
+        btnNuevoIntento.addActionListener(this::btnNuevoIntentoActionPerformed);
+        getContentPane().add(btnNuevoIntento, new org.netbeans.lib.awtextra.AbsoluteConstraints(517, 2, 340, 50));
+
+        btnVolver.setBackground(new java.awt.Color(153, 255, 153));
+        btnVolver.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        btnVolver.setForeground(new java.awt.Color(255, 255, 255));
         btnVolver.setText("Volver al menú");
         btnVolver.setActionCommand("VolverMenu");
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(43, 43, 43)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(scrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 689, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnVolver, javax.swing.GroupLayout.PREFERRED_SIZE, 325, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(57, 57, 57)
-                        .addComponent(btnNuevoIntento, javax.swing.GroupLayout.PREFERRED_SIZE, 307, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(24, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnVolver)
-                    .addComponent(btnNuevoIntento))
-                .addGap(23, 23, 23)
-                .addComponent(scrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 343, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(61, Short.MAX_VALUE))
-        );
+        getContentPane().add(btnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 3, 450, 50));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnNuevoIntentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevoIntentoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnNuevoIntentoActionPerformed
 
     /**
      * @param args the command line arguments

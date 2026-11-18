@@ -61,6 +61,7 @@ public class ControladorCapitulo implements ActionListener {
         this.ventana.mostrarCapitulo(c.getTitulo(), paneles[numero - 1]);
         this.ventanaMenu.setVisible(false);
         this.ventana.setVisible(true);
+        this.ventana.actualizarProgreso(numero, paneles.length);
     }
 
     @Override
@@ -73,6 +74,12 @@ public class ControladorCapitulo implements ActionListener {
             case "VolverMenu":
                 this.ventana.setVisible(false);
                 this.ventanaMenu.setVisible(true);
+                break;
+            case "SiguienteCap":
+                if (capituloActual < paneles.length) {
+                    abrir(capituloActual + 1);
+                    
+                }
                 break;
             default:
                 System.out.println("Comando no reconocido: " + e.getActionCommand());

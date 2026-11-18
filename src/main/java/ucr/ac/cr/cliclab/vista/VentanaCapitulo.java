@@ -25,6 +25,7 @@ public class VentanaCapitulo extends javax.swing.JFrame {
 public void listenerButton(ActionListener l) {
     btnActividades.addActionListener(l);
     btnVolver.addActionListener(l);
+    btnSiguienteCap.addActionListener(l);
 }
 public void mostrarCapitulo(String titulo, JPanel panel) {
     setTitle(titulo);
@@ -33,6 +34,13 @@ public void mostrarCapitulo(String titulo, JPanel panel) {
     pnlTeoria.revalidate();
     pnlTeoria.repaint();
 }
+public void actualizarProgreso(int capitulo, int total) {
+    barCapitulos.setMaximum(total);
+    barCapitulos.setValue(capitulo);
+    barCapitulos.setString("Capítulo " + capitulo + " de " + total);
+    btnSiguienteCap.setEnabled(capitulo < total);
+}
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -43,20 +51,15 @@ public void mostrarCapitulo(String titulo, JPanel panel) {
     private void initComponents() {
 
         pnlContenido = new javax.swing.JPanel();
-        btnActividades = new javax.swing.JButton();
         btnVolver = new javax.swing.JButton();
         pnlTeoria = new javax.swing.JPanel();
+        btnActividades = new javax.swing.JButton();
+        btnSiguienteCap = new javax.swing.JButton();
+        barCapitulos = new javax.swing.JProgressBar();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        pnlContenido.setLayout(new java.awt.BorderLayout());
-
-        btnActividades.setBackground(new java.awt.Color(182, 215, 182));
-        btnActividades.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnActividades.setForeground(new java.awt.Color(255, 255, 255));
-        btnActividades.setText("Ir a actividades");
-        btnActividades.setActionCommand("Actividades");
-        pnlContenido.add(btnActividades, java.awt.BorderLayout.PAGE_END);
+        pnlContenido.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnVolver.setBackground(new java.awt.Color(182, 215, 182));
         btnVolver.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -64,20 +67,43 @@ public void mostrarCapitulo(String titulo, JPanel panel) {
         btnVolver.setText("Volver al menú");
         btnVolver.setActionCommand("VolverMenu");
         btnVolver.setFocusPainted(false);
-        pnlContenido.add(btnVolver, java.awt.BorderLayout.PAGE_START);
+        pnlContenido.add(btnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 0, 410, 20));
+
+        pnlTeoria.setBackground(new java.awt.Color(255, 255, 204));
+        pnlTeoria.setPreferredSize(new java.awt.Dimension(880, 600));
 
         javax.swing.GroupLayout pnlTeoriaLayout = new javax.swing.GroupLayout(pnlTeoria);
         pnlTeoria.setLayout(pnlTeoriaLayout);
         pnlTeoriaLayout.setHorizontalGroup(
             pnlTeoriaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 702, Short.MAX_VALUE)
+            .addGap(0, 880, Short.MAX_VALUE)
         );
         pnlTeoriaLayout.setVerticalGroup(
             pnlTeoriaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 472, Short.MAX_VALUE)
+            .addGap(0, 670, Short.MAX_VALUE)
         );
 
-        pnlContenido.add(pnlTeoria, java.awt.BorderLayout.CENTER);
+        pnlContenido.add(pnlTeoria, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 880, 670));
+
+        btnActividades.setBackground(new java.awt.Color(182, 215, 182));
+        btnActividades.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnActividades.setForeground(new java.awt.Color(255, 255, 255));
+        btnActividades.setText("Empezar nuevo intento de actividad?");
+        btnActividades.setActionCommand("Actividades");
+        btnActividades.addActionListener(this::btnActividadesActionPerformed);
+        pnlContenido.add(btnActividades, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 470, 20));
+
+        btnSiguienteCap.setText("Siguiente capítulo ▶");
+        btnSiguienteCap.setActionCommand("SiguienteCap");
+        btnSiguienteCap.addActionListener(this::btnSiguienteCapActionPerformed);
+        pnlContenido.add(btnSiguienteCap, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 880, -1));
+
+        barCapitulos.setBackground(new java.awt.Color(204, 255, 204));
+        barCapitulos.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        barCapitulos.setForeground(new java.awt.Color(255, 0, 0));
+        barCapitulos.setMaximum(5);
+        barCapitulos.setStringPainted(true);
+        pnlContenido.add(barCapitulos, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 880, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -87,11 +113,19 @@ public void mostrarCapitulo(String titulo, JPanel panel) {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(pnlContenido, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(pnlContenido, javax.swing.GroupLayout.DEFAULT_SIZE, 741, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnActividadesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnActividadesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnActividadesActionPerformed
+
+    private void btnSiguienteCapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteCapActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSiguienteCapActionPerformed
 
     /**
      * @param args the command line arguments
@@ -119,7 +153,9 @@ public void mostrarCapitulo(String titulo, JPanel panel) {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JProgressBar barCapitulos;
     private javax.swing.JButton btnActividades;
+    private javax.swing.JButton btnSiguienteCap;
     private javax.swing.JButton btnVolver;
     private javax.swing.JPanel pnlContenido;
     private javax.swing.JPanel pnlTeoria;

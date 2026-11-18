@@ -75,34 +75,47 @@ public void mostrarRetroalimentacion(boolean correcta, String explicacion) {
         btnResponder = new javax.swing.JButton();
         btnSiguiente = new javax.swing.JButton();
         lblRetroalimentacion = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        lblEnunciado.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         lblEnunciado.setText("jLabel1");
-        getContentPane().add(lblEnunciado, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 108, -1, -1));
+        getContentPane().add(lblEnunciado, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 90, 590, -1));
 
         grupoOpciones.add(rbOpcion1);
+        rbOpcion1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         rbOpcion1.setText("jRadioButton1");
-        getContentPane().add(rbOpcion1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 142, -1, -1));
+        rbOpcion1.addActionListener(this::rbOpcion1ActionPerformed);
+        getContentPane().add(rbOpcion1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 160, -1, -1));
 
         grupoOpciones.add(rbOpcion2);
+        rbOpcion2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         rbOpcion2.setText("jRadioButton2");
-        getContentPane().add(rbOpcion2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 169, -1, -1));
+        getContentPane().add(rbOpcion2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 230, -1, -1));
 
         grupoOpciones.add(rbOpcion3);
+        rbOpcion3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         rbOpcion3.setText("jRadioButton3");
-        getContentPane().add(rbOpcion3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 196, -1, -1));
+        rbOpcion3.addActionListener(this::rbOpcion3ActionPerformed);
+        getContentPane().add(rbOpcion3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 310, -1, -1));
 
+        btnResponder.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnResponder.setText("Responder");
-        getContentPane().add(btnResponder, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 249, -1, -1));
+        getContentPane().add(btnResponder, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 460, 160, -1));
 
+        btnSiguiente.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnSiguiente.setText("Siguiente");
         btnSiguiente.addActionListener(this::btnSiguienteActionPerformed);
-        getContentPane().add(btnSiguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(257, 249, -1, -1));
+        getContentPane().add(btnSiguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 460, 160, -1));
 
+        lblRetroalimentacion.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         lblRetroalimentacion.setText("jLabel1");
-        getContentPane().add(lblRetroalimentacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 11, 298, 79));
+        getContentPane().add(lblRetroalimentacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 150, 210, 340));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Fondo_Evaluaciones_880x600.png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -160, 1010, 900));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -111,12 +124,21 @@ public void mostrarRetroalimentacion(boolean correcta, String explicacion) {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnSiguienteActionPerformed
 
+    private void rbOpcion3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbOpcion3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbOpcion3ActionPerformed
+
+    private void rbOpcion1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbOpcion1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbOpcion1ActionPerformed
+
    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnResponder;
     private javax.swing.JButton btnSiguiente;
     private javax.swing.ButtonGroup grupoOpciones;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel lblEnunciado;
     private javax.swing.JLabel lblRetroalimentacion;
     private javax.swing.JRadioButton rbOpcion1;
