@@ -71,7 +71,8 @@ public class PanelCap1 extends javax.swing.JPanel {
         jTextArea1.setRows(5);
         jTextArea1.setText("El ISO es un ajuste de la cámara que controla la sensibilidad utilizada para obtener una imagen con mayor o menor brillo.  \n\nUn ISO bajo produce imágenes más limpias, mientras que un ISO alto permite trabajar en lugares oscuros, pero puede generar ruido digital.");
         jTextArea1.setWrapStyleWord(true);
-        add(jTextArea1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 130, -1, -1));
+        jTextArea1.setPreferredSize(new java.awt.Dimension(232, 104));
+        add(jTextArea1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, 310, 150));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 102, 51));
