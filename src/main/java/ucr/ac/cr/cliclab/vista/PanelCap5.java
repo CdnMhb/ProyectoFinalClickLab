@@ -27,15 +27,11 @@ public class PanelCap5 extends javax.swing.JPanel {
     private void initComponents() {
 
         ventanaCapitulo1 = new ucr.ac.cr.cliclab.vista.VentanaCapitulo();
-        jScrollPane4 = new javax.swing.JScrollPane();
         jTextArea4 = new javax.swing.JTextArea();
         jLabel4 = new javax.swing.JLabel();
-        jScrollPane3 = new javax.swing.JScrollPane();
         jTextArea3 = new javax.swing.JTextArea();
         jLabel3 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
-        jScrollPane2 = new javax.swing.JScrollPane();
         jTextArea2 = new javax.swing.JTextArea();
         jLabel2 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -47,15 +43,14 @@ public class PanelCap5 extends javax.swing.JPanel {
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTextArea4.setEditable(false);
-        jTextArea4.setBackground(new java.awt.Color(240, 240, 219));
+        jTextArea4.setBackground(new java.awt.Color(251, 244, 234));
         jTextArea4.setColumns(20);
         jTextArea4.setLineWrap(true);
         jTextArea4.setRows(5);
         jTextArea4.setText("A mayor distancia focal, menor ángulo de visión y mayor tamaño aparente del sujeto desde la misma posición.");
         jTextArea4.setWrapStyleWord(true);
-        jScrollPane4.setViewportView(jTextArea4);
-
-        add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 440, 430, 60));
+        jTextArea4.setPreferredSize(new java.awt.Dimension(232, 184));
+        add(jTextArea4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 440, 550, 60));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 102, 51));
@@ -63,44 +58,38 @@ public class PanelCap5 extends javax.swing.JPanel {
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 410, -1, -1));
 
         jTextArea3.setEditable(false);
-        jTextArea3.setBackground(new java.awt.Color(240, 240, 219));
+        jTextArea3.setBackground(new java.awt.Color(251, 244, 234));
         jTextArea3.setColumns(20);
         jTextArea3.setLineWrap(true);
         jTextArea3.setRows(5);
         jTextArea3.setText("Para fotografiar un paisaje extenso, podés utilizar 18 mm. Para fotografiar un ave desde lejos, podés utilizar 200 mm.");
         jTextArea3.setWrapStyleWord(true);
-        jScrollPane3.setViewportView(jTextArea3);
-
-        add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 330, 420, 60));
+        jTextArea3.setPreferredSize(new java.awt.Dimension(232, 184));
+        add(jTextArea3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 330, 540, 60));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 102, 51));
         jLabel3.setText("Ejemplo práctico:");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 290, 110, 40));
 
-        jScrollPane1.setBackground(new java.awt.Color(240, 240, 219));
-
         jTextArea1.setEditable(false);
-        jTextArea1.setBackground(new java.awt.Color(240, 240, 219));
+        jTextArea1.setBackground(new java.awt.Color(251, 244, 234));
         jTextArea1.setColumns(20);
         jTextArea1.setLineWrap(true);
         jTextArea1.setRows(5);
-        jTextArea1.setText("Es una característica óptica del lente que se mide en milímetros (mm) y determina principalmente el ángulo de visión y el tamaño con el que aparecen los objetos en la imagen.\n\nUna distancia focal corta permite capturar un campo de visión amplio.\n\nUna distancia focal larga ofrece un campo de visión más estrecho y hace que los sujetos ocupen mayor espacio en la fotografía.\n");
+        jTextArea1.setText("Es una característica óptica del lente que se mide en milímetros (mm) y determina principalmente el ángulo de visión y el tamaño con el que aparecen los objetos en la imagen.\nUna distancia focal corta permite capturar un campo de visión amplio.\nUna distancia focal larga ofrece un campo de visión más estrecho y hace que los sujetos ocupen mayor espacio en la fotografía.\n");
         jTextArea1.setWrapStyleWord(true);
-        jScrollPane1.setViewportView(jTextArea1);
-
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 130, 260, 140));
+        jTextArea1.setPreferredSize(new java.awt.Dimension(232, 190));
+        add(jTextArea1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, 310, 150));
 
         jTextArea2.setEditable(false);
-        jTextArea2.setBackground(new java.awt.Color(240, 240, 219));
+        jTextArea2.setBackground(new java.awt.Color(251, 244, 234));
         jTextArea2.setColumns(20);
         jTextArea2.setLineWrap(true);
         jTextArea2.setRows(5);
         jTextArea2.setText("•18 mm: gran angular, ideal para paisajes.\n•35 mm: útil para fotografía cotidiana.\n•50 mm: común en retratos y fotografía general.\n•200 mm: teleobjetivo, útil para sujetos lejanos.\n");
         jTextArea2.setWrapStyleWord(true);
-        jScrollPane2.setViewportView(jTextArea2);
-
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 150, 240, 120));
+        add(jTextArea2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 140, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 102, 51));
@@ -121,6 +110,7 @@ public class PanelCap5 extends javax.swing.JPanel {
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/55555555555555.png"))); // NOI18N
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, -10, 390, 630));
 
+        jTextField1.setEditable(false);
         jTextField1.setBackground(new java.awt.Color(162, 192, 147));
         jTextField1.setFont(new java.awt.Font("Book Antiqua", 1, 14)); // NOI18N
         jTextField1.setForeground(new java.awt.Color(255, 255, 255));
@@ -145,10 +135,6 @@ public class PanelCap5 extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextArea jTextArea3;

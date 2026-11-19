@@ -26,6 +26,7 @@ public void listenerButton(ActionListener l) {
     btnActividades.addActionListener(l);
     btnVolver.addActionListener(l);
     btnSiguienteCap.addActionListener(l);
+    btnAnteriorCap.addActionListener(l);
 }
 public void mostrarCapitulo(String titulo, JPanel panel) {
     setTitle(titulo);
@@ -39,6 +40,7 @@ public void actualizarProgreso(int capitulo, int total) {
     barCapitulos.setValue(capitulo);
     barCapitulos.setString("Capítulo " + capitulo + " de " + total);
     btnSiguienteCap.setEnabled(capitulo < total);
+    btnAnteriorCap.setEnabled(capitulo >  1);
 }
 
     /**
@@ -53,6 +55,7 @@ public void actualizarProgreso(int capitulo, int total) {
         pnlContenido = new javax.swing.JPanel();
         btnSiguienteCap = new javax.swing.JButton();
         btnVolver = new javax.swing.JButton();
+        btnAnteriorCap = new javax.swing.JButton();
         pnlTeoria = new javax.swing.JPanel();
         btnActividades = new javax.swing.JButton();
         barCapitulos = new javax.swing.JProgressBar();
@@ -64,7 +67,7 @@ public void actualizarProgreso(int capitulo, int total) {
         btnSiguienteCap.setText("Siguiente capítulo ▶");
         btnSiguienteCap.setActionCommand("SiguienteCap");
         btnSiguienteCap.addActionListener(this::btnSiguienteCapActionPerformed);
-        pnlContenido.add(btnSiguienteCap, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 50, 890, -1));
+        pnlContenido.add(btnSiguienteCap, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 50, 430, -1));
 
         btnVolver.setBackground(new java.awt.Color(182, 215, 182));
         btnVolver.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -73,6 +76,10 @@ public void actualizarProgreso(int capitulo, int total) {
         btnVolver.setActionCommand("VolverMenu");
         btnVolver.setFocusPainted(false);
         pnlContenido.add(btnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 0, 430, 30));
+
+        btnAnteriorCap.setText("◀ Capitulo anterior");
+        btnAnteriorCap.setActionCommand("CapituloAnterior");
+        pnlContenido.add(btnAnteriorCap, new org.netbeans.lib.awtextra.AbsoluteConstraints(-5, 50, 460, -1));
 
         pnlTeoria.setBackground(new java.awt.Color(255, 255, 204));
         pnlTeoria.setPreferredSize(new java.awt.Dimension(880, 600));
@@ -155,6 +162,7 @@ public void actualizarProgreso(int capitulo, int total) {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JProgressBar barCapitulos;
     private javax.swing.JButton btnActividades;
+    private javax.swing.JButton btnAnteriorCap;
     private javax.swing.JButton btnSiguienteCap;
     private javax.swing.JButton btnVolver;
     private javax.swing.JPanel pnlContenido;

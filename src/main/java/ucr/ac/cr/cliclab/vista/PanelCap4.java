@@ -26,15 +26,11 @@ public class PanelCap4 extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jScrollPane4 = new javax.swing.JScrollPane();
         jTextArea4 = new javax.swing.JTextArea();
         jLabel4 = new javax.swing.JLabel();
-        jScrollPane3 = new javax.swing.JScrollPane();
         jTextArea3 = new javax.swing.JTextArea();
         jLabel3 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
-        jScrollPane2 = new javax.swing.JScrollPane();
         jTextArea2 = new javax.swing.JTextArea();
         jLabel2 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -46,15 +42,14 @@ public class PanelCap4 extends javax.swing.JPanel {
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTextArea4.setEditable(false);
-        jTextArea4.setBackground(new java.awt.Color(240, 240, 219));
+        jTextArea4.setBackground(new java.awt.Color(251, 244, 234));
         jTextArea4.setColumns(20);
         jTextArea4.setLineWrap(true);
         jTextArea4.setRows(5);
         jTextArea4.setText("La profundidad de campo depende de la apertura, la distancia al sujeto y la distancia focal.");
         jTextArea4.setWrapStyleWord(true);
-        jScrollPane4.setViewportView(jTextArea4);
-
-        add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 440, 510, 40));
+        jTextArea4.setPreferredSize(new java.awt.Dimension(232, 104));
+        add(jTextArea4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 440, 550, 50));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 102, 51));
@@ -62,44 +57,38 @@ public class PanelCap4 extends javax.swing.JPanel {
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 400, -1, 30));
 
         jTextArea3.setEditable(false);
-        jTextArea3.setBackground(new java.awt.Color(240, 240, 219));
+        jTextArea3.setBackground(new java.awt.Color(251, 244, 234));
         jTextArea3.setColumns(20);
         jTextArea3.setLineWrap(true);
         jTextArea3.setRows(5);
         jTextArea3.setText("Para destacar una flor y desenfocar el jardín, utilizá una profundidad de campo reducida. Para fotografiar un paisaje completo, utilizá una profundidad amplia.");
         jTextArea3.setWrapStyleWord(true);
-        jScrollPane3.setViewportView(jTextArea3);
-
-        add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 330, 530, 60));
+        jTextArea3.setPreferredSize(new java.awt.Dimension(232, 184));
+        add(jTextArea3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 330, 550, 60));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 102, 51));
         jLabel3.setText("Ejemplo práctico:");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 280, 100, 40));
 
-        jScrollPane1.setBackground(new java.awt.Color(240, 240, 219));
-
         jTextArea1.setEditable(false);
-        jTextArea1.setBackground(new java.awt.Color(240, 240, 219));
+        jTextArea1.setBackground(new java.awt.Color(251, 244, 234));
         jTextArea1.setColumns(20);
         jTextArea1.setLineWrap(true);
         jTextArea1.setRows(5);
         jTextArea1.setText("Es la distancia entre los elementos más cercanos y más lejanos que aparecen aceptablemente enfocados en una fotografía.\nUna profundidad de campo reducida mantiene enfocado al sujeto y desenfoca el fondo.\nUna profundidad de campo amplia permite que más elementos de la escena se vean nítidos.\n");
         jTextArea1.setWrapStyleWord(true);
-        jScrollPane1.setViewportView(jTextArea1);
-
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 130, 260, 140));
+        jTextArea1.setPreferredSize(new java.awt.Dimension(232, 184));
+        add(jTextArea1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 130, 280, 140));
 
         jTextArea2.setEditable(false);
-        jTextArea2.setBackground(new java.awt.Color(240, 240, 219));
+        jTextArea2.setBackground(new java.awt.Color(251, 244, 234));
         jTextArea2.setColumns(20);
         jTextArea2.setLineWrap(true);
         jTextArea2.setRows(5);
         jTextArea2.setText("•Reducida: solo una pequeña zona aparece enfocada.\n\n•Intermedia: varios elementos se mantienen enfocados.\n\n•Amplia: gran parte de la escena aparece nítida\n");
         jTextArea2.setWrapStyleWord(true);
-        jScrollPane2.setViewportView(jTextArea2);
-
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 130, 240, 140));
+        add(jTextArea2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 130, -1, 140));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 102, 51));
@@ -120,6 +109,7 @@ public class PanelCap4 extends javax.swing.JPanel {
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/download (3).png"))); // NOI18N
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, -10, 390, 630));
 
+        jTextField1.setEditable(false);
         jTextField1.setBackground(new java.awt.Color(162, 192, 147));
         jTextField1.setFont(new java.awt.Font("Book Antiqua", 1, 14)); // NOI18N
         jTextField1.setForeground(new java.awt.Color(255, 255, 255));
@@ -144,10 +134,6 @@ public class PanelCap4 extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextArea jTextArea3;

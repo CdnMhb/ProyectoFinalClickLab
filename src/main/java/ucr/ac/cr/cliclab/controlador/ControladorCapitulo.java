@@ -63,6 +63,17 @@ public class ControladorCapitulo implements ActionListener {
         this.ventana.setVisible(true);
         this.ventana.actualizarProgreso(numero, paneles.length);
     }
+    private void capituloAnterior() {
+    if (capituloActual > 1) {
+        capituloActual--;
+        abrir(capituloActual);
+    } else {
+        JOptionPane.showMessageDialog(
+            ventana,
+            "Ya estás en el primer capítulo"
+        );
+    }
+}
 
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -80,6 +91,9 @@ public class ControladorCapitulo implements ActionListener {
                     abrir(capituloActual + 1);
                     
                 }
+                break;
+                case "CapituloAnterior":
+                capituloAnterior();
                 break;
             default:
                 System.out.println("Comando no reconocido: " + e.getActionCommand());

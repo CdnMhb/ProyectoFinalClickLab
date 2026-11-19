@@ -27,17 +27,13 @@ public class PanelCap2 extends javax.swing.JPanel {
     private void initComponents() {
 
         jLabel2 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
-        jScrollPane2 = new javax.swing.JScrollPane();
         jTextArea2 = new javax.swing.JTextArea();
+        jTextArea1 = new javax.swing.JTextArea();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jScrollPane3 = new javax.swing.JScrollPane();
         jTextArea3 = new javax.swing.JTextArea();
-        jScrollPane4 = new javax.swing.JScrollPane();
         jTextArea4 = new javax.swing.JTextArea();
         jLabel7 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
@@ -50,28 +46,22 @@ public class PanelCap2 extends javax.swing.JPanel {
         jLabel2.setText("CAPITULO 2:  VELOCIDAD DE OBTURACIÓN");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 800, 40));
 
-        jScrollPane1.setBackground(new java.awt.Color(240, 240, 219));
+        jTextArea2.setEditable(false);
+        jTextArea2.setBackground(new java.awt.Color(251, 244, 234));
+        jTextArea2.setColumns(20);
+        jTextArea2.setRows(5);
+        jTextArea2.setText("•1/1000 s: congela movimientos rápidos.\n•1/125 s: útil para sujetos relativamente \nquietos.\n•1/15 s: puede generar movimiento \nborroso.\n•1 segundo: permite captar estelas \nde luz y movimiento prolongado.\n");
+        jTextArea2.setInheritsPopupMenu(true);
+        add(jTextArea2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 140, -1, -1));
 
         jTextArea1.setEditable(false);
-        jTextArea1.setBackground(new java.awt.Color(240, 240, 219));
+        jTextArea1.setBackground(new java.awt.Color(251, 244, 234));
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
         jTextArea1.setText("Es el tiempo durante el cual el obturador \nde la cámara permite que la luz llegue al \nsensor.\n\nUna velocidad rápida congela el movimiento,\n mientras que una velocidad lenta permite\n capturar movimiento mediante un efecto \nde desenfoque.\n");
         jTextArea1.setWrapStyleWord(true);
         jTextArea1.setInheritsPopupMenu(true);
-        jScrollPane1.setViewportView(jTextArea1);
-
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 130, 260, 150));
-
-        jTextArea2.setEditable(false);
-        jTextArea2.setBackground(new java.awt.Color(240, 240, 219));
-        jTextArea2.setColumns(20);
-        jTextArea2.setRows(5);
-        jTextArea2.setText("•1/1000 s: congela movimientos rápidos.\n•1/125 s: útil para sujetos relativamente \nquietos.\n•1/15 s: puede generar movimiento \nborroso.\n•1 segundo: permite captar estelas \nde luz y movimiento prolongado.\n");
-        jTextArea2.setInheritsPopupMenu(true);
-        jScrollPane2.setViewportView(jTextArea2);
-
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 140, 260, 130));
+        add(jTextArea1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 130, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 102, 51));
@@ -93,25 +83,22 @@ public class PanelCap2 extends javax.swing.JPanel {
         jLabel6.setText("Recordá:");
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 410, -1, -1));
 
-        jTextArea3.setBackground(new java.awt.Color(240, 240, 219));
+        jTextArea3.setBackground(new java.awt.Color(251, 244, 234));
         jTextArea3.setColumns(20);
         jTextArea3.setRows(5);
         jTextArea3.setText("Para fotografiar a alguien saltando, utilizá una velocidad rápida como 1/1000 s. \nPara conseguir un efecto sedoso en una cascada, utilizá una velocidad lenta.");
-        jScrollPane3.setViewportView(jTextArea3);
+        add(jTextArea3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 330, 540, 50));
 
-        add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 330, 460, 60));
-
-        jTextArea4.setBackground(new java.awt.Color(240, 240, 219));
+        jTextArea4.setBackground(new java.awt.Color(251, 244, 234));
         jTextArea4.setColumns(20);
         jTextArea4.setRows(5);
         jTextArea4.setText("Cuanto más tiempo permanezca abierto el obturador,\n más luz entra y más movimiento puede registrarse.");
-        jScrollPane4.setViewportView(jTextArea4);
-
-        add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 440, 450, 60));
+        add(jTextArea4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 440, 530, 50));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/download (1).png"))); // NOI18N
         add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, -20, 410, 630));
 
+        jTextField1.setEditable(false);
         jTextField1.setBackground(new java.awt.Color(162, 192, 147));
         jTextField1.setFont(new java.awt.Font("Book Antiqua", 1, 14)); // NOI18N
         jTextField1.setForeground(new java.awt.Color(255, 255, 255));
@@ -136,10 +123,6 @@ public class PanelCap2 extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextArea jTextArea3;
