@@ -107,7 +107,7 @@ public class PanelCap2 extends javax.swing.JPanel {
         jTextArea4.setText("Cuanto más tiempo permanezca abierto el obturador,\n más luz entra y más movimiento puede registrarse.");
         jScrollPane4.setViewportView(jTextArea4);
 
-        add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 440, 320, 60));
+        add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 440, 450, 60));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/download (1).png"))); // NOI18N
         add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, -20, 410, 630));

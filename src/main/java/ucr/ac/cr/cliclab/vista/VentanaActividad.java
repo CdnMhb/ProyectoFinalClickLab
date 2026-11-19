@@ -129,7 +129,7 @@ public void mostrarRetroalimentacion(boolean correcta, String explicacion) {
 
         lblEnunciado.setEditable(false);
         lblEnunciado.setColumns(20);
-        lblEnunciado.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        lblEnunciado.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         lblEnunciado.setLineWrap(true);
         lblEnunciado.setRows(5);
         lblEnunciado.setWrapStyleWord(true);
