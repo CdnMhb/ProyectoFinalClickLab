@@ -41,6 +41,7 @@ public class PanelCap5 extends javax.swing.JPanel {
         jLabel5 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -54,28 +55,28 @@ public class PanelCap5 extends javax.swing.JPanel {
         jTextArea4.setWrapStyleWord(true);
         jScrollPane4.setViewportView(jTextArea4);
 
-        add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 430, 560, 70));
+        add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 440, 430, 60));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 102, 51));
         jLabel4.setText("Recordá:");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 430, -1, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 410, -1, -1));
 
         jTextArea3.setEditable(false);
         jTextArea3.setBackground(new java.awt.Color(240, 240, 219));
         jTextArea3.setColumns(20);
         jTextArea3.setLineWrap(true);
         jTextArea3.setRows(5);
-        jTextArea3.setText("Si fotografiás un paisaje soleado, podés utilizar ISO 100. \nSi estás en una habitación oscura, probablemente necesités subirlo.");
+        jTextArea3.setText("Para fotografiar un paisaje extenso, podés utilizar 18 mm. Para fotografiar un ave desde lejos, podés utilizar 200 mm.");
         jTextArea3.setWrapStyleWord(true);
         jScrollPane3.setViewportView(jTextArea3);
 
-        add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 330, 560, 60));
+        add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 330, 420, 60));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 102, 51));
         jLabel3.setText("Ejemplo práctico:");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, 80, 40));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 290, 110, 40));
 
         jScrollPane1.setBackground(new java.awt.Color(240, 240, 219));
 
@@ -84,7 +85,7 @@ public class PanelCap5 extends javax.swing.JPanel {
         jTextArea1.setColumns(20);
         jTextArea1.setLineWrap(true);
         jTextArea1.setRows(5);
-        jTextArea1.setText("El ISO es un ajuste de la cámara que controla la sensibilidad utilizada para obtener una imagen con mayor o menor brillo.  \n\nUn ISO bajo produce imágenes más limpias, mientras que un ISO alto permite trabajar en lugares oscuros, pero puede generar ruido digital.");
+        jTextArea1.setText("Es una característica óptica del lente que se mide en milímetros (mm) y determina principalmente el ángulo de visión y el tamaño con el que aparecen los objetos en la imagen.\n\nUna distancia focal corta permite capturar un campo de visión amplio.\n\nUna distancia focal larga ofrece un campo de visión más estrecho y hace que los sujetos ocupen mayor espacio en la fotografía.\n");
         jTextArea1.setWrapStyleWord(true);
         jScrollPane1.setViewportView(jTextArea1);
 
@@ -95,33 +96,45 @@ public class PanelCap5 extends javax.swing.JPanel {
         jTextArea2.setColumns(20);
         jTextArea2.setLineWrap(true);
         jTextArea2.setRows(5);
-        jTextArea2.setText("ISO 100–200: ideal para exteriores con mucha luz.  \n\n ISO 400–800: útil en interiores iluminados.  \n\nISO 1600 o más: permite fotografiar con poca luz, pero puede aumentar el ruido.");
+        jTextArea2.setText("•18 mm: gran angular, ideal para paisajes.\n•35 mm: útil para fotografía cotidiana.\n•50 mm: común en retratos y fotografía general.\n•200 mm: teleobjetivo, útil para sujetos lejanos.\n");
         jTextArea2.setWrapStyleWord(true);
         jScrollPane2.setViewportView(jTextArea2);
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 130, 240, 140));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 150, 240, 120));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 102, 51));
-        jLabel2.setText("¿Qué es el ISO?");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, -1, 20));
+        jLabel2.setText("¿Qué es la distancia focal?");
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 100, -1, 20));
 
         jLabel5.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 102, 51));
         jLabel5.setText("Valores comunes:");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 80, 150, 30));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 90, 150, 30));
 
         jLabel7.setBackground(new java.awt.Color(204, 255, 204));
-        jLabel7.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
-        jLabel7.setText("CAPITULO 1: ISO");
-        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 20, 420, 50));
+        jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(0, 102, 51));
+        jLabel7.setText("CAPITULO 5: Distancia focal");
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 510, 50));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/55555555555555.png"))); // NOI18N
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, -10, 390, 630));
 
+        jTextField1.setBackground(new java.awt.Color(162, 192, 147));
+        jTextField1.setFont(new java.awt.Font("Book Antiqua", 1, 14)); // NOI18N
+        jTextField1.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField1.setText("Objetivo: Escoger la distancia focal según el ángulo de visión y el tamaño del sujeto que se busca.");
+        jTextField1.addActionListener(this::jTextField1ActionPerformed);
+        add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 550, -1, 30));
+
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Fondo_Paneles_880x600.png"))); // NOI18N
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 6, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -140,6 +153,7 @@ public class PanelCap5 extends javax.swing.JPanel {
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextArea jTextArea3;
     private javax.swing.JTextArea jTextArea4;
+    private javax.swing.JTextField jTextField1;
     private ucr.ac.cr.cliclab.vista.VentanaCapitulo ventanaCapitulo1;
     // End of variables declaration//GEN-END:variables
 }

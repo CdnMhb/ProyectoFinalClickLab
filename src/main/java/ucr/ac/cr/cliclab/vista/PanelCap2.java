@@ -40,25 +40,28 @@ public class PanelCap2 extends javax.swing.JPanel {
         jScrollPane4 = new javax.swing.JScrollPane();
         jTextArea4 = new javax.swing.JTextArea();
         jLabel7 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 102, 51));
         jLabel2.setText("CAPITULO 2:  VELOCIDAD DE OBTURACIÓN");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 670, 40));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 800, 40));
 
         jScrollPane1.setBackground(new java.awt.Color(240, 240, 219));
 
+        jTextArea1.setEditable(false);
         jTextArea1.setBackground(new java.awt.Color(240, 240, 219));
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
-        jTextArea1.setText("Es el tiempo durante el cual el obturador \nde la cámara permite que la luz llegue al \nsensor.\nUna velocidad rápida congela el movimiento,\n mientras que una velocidad lenta permite\n capturar movimiento mediante un efecto \nde desenfoque.\n");
+        jTextArea1.setText("Es el tiempo durante el cual el obturador \nde la cámara permite que la luz llegue al \nsensor.\n\nUna velocidad rápida congela el movimiento,\n mientras que una velocidad lenta permite\n capturar movimiento mediante un efecto \nde desenfoque.\n");
         jTextArea1.setWrapStyleWord(true);
         jTextArea1.setInheritsPopupMenu(true);
         jScrollPane1.setViewportView(jTextArea1);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, 310, 150));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 130, 260, 150));
 
         jTextArea2.setEditable(false);
         jTextArea2.setBackground(new java.awt.Color(240, 240, 219));
@@ -68,7 +71,7 @@ public class PanelCap2 extends javax.swing.JPanel {
         jTextArea2.setInheritsPopupMenu(true);
         jScrollPane2.setViewportView(jTextArea2);
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 130, 260, 150));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 140, 260, 130));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 102, 51));
@@ -83,33 +86,46 @@ public class PanelCap2 extends javax.swing.JPanel {
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 102, 51));
         jLabel5.setText("Ejemplo Práctico:");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, -1, -1));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 300, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(0, 102, 51));
         jLabel6.setText("Recordá:");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 430, -1, -1));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 410, -1, -1));
 
         jTextArea3.setBackground(new java.awt.Color(240, 240, 219));
         jTextArea3.setColumns(20);
         jTextArea3.setRows(5);
+        jTextArea3.setText("Para fotografiar a alguien saltando, utilizá una velocidad rápida como 1/1000 s. \nPara conseguir un efecto sedoso en una cascada, utilizá una velocidad lenta.");
         jScrollPane3.setViewportView(jTextArea3);
 
-        add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 320, 440, 80));
+        add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 330, 460, 60));
 
         jTextArea4.setBackground(new java.awt.Color(240, 240, 219));
         jTextArea4.setColumns(20);
         jTextArea4.setRows(5);
+        jTextArea4.setText("Cuanto más tiempo permanezca abierto el obturador,\n más luz entra y más movimiento puede registrarse.");
         jScrollPane4.setViewportView(jTextArea4);
 
-        add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 430, 430, 70));
+        add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 440, 320, 60));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/download (1).png"))); // NOI18N
         add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, -20, 410, 630));
 
+        jTextField1.setBackground(new java.awt.Color(162, 192, 147));
+        jTextField1.setFont(new java.awt.Font("Book Antiqua", 1, 14)); // NOI18N
+        jTextField1.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField1.setText("Objetivo: Seleccionar la velocidad de obturación según el movimiento que se quiere congelar o capturar.");
+        jTextField1.addActionListener(this::jTextField1ActionPerformed);
+        add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 540, 710, 30));
+
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Fondo_Paneles_880x600.png"))); // NOI18N
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 880, 610));
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -128,5 +144,6 @@ public class PanelCap2 extends javax.swing.JPanel {
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextArea jTextArea3;
     private javax.swing.JTextArea jTextArea4;
+    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }

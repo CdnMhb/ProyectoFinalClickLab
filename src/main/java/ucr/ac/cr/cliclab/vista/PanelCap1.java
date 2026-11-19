@@ -27,6 +27,7 @@ public class PanelCap1 extends javax.swing.JPanel {
     private void initComponents() {
 
         ventanaCapitulo1 = new ucr.ac.cr.cliclab.vista.VentanaCapitulo();
+        jTextField1 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
@@ -45,6 +46,13 @@ public class PanelCap1 extends javax.swing.JPanel {
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jTextField1.setBackground(new java.awt.Color(162, 192, 147));
+        jTextField1.setFont(new java.awt.Font("Book Antiqua", 1, 18)); // NOI18N
+        jTextField1.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField1.setText("Objetivo: Elegir el valor ISO adecuado según la cantidad de luz disponible.");
+        jTextField1.addActionListener(this::jTextField1ActionPerformed);
+        add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 540, 660, 30));
+
         jLabel1.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 102, 51));
         jLabel1.setText("¿Qué es el ISO?");
@@ -61,12 +69,12 @@ public class PanelCap1 extends javax.swing.JPanel {
         jTextArea1.setWrapStyleWord(true);
         jScrollPane1.setViewportView(jTextArea1);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 140, 260, 140));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, 260, 140));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 102, 51));
         jLabel2.setText("Valores comunes:");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 100, 150, 30));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 90, 150, 30));
 
         jTextArea2.setEditable(false);
         jTextArea2.setBackground(new java.awt.Color(240, 240, 219));
@@ -77,17 +85,17 @@ public class PanelCap1 extends javax.swing.JPanel {
         jTextArea2.setWrapStyleWord(true);
         jScrollPane2.setViewportView(jTextArea2);
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 130, 240, 140));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 130, 240, 140));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 102, 51));
         jLabel3.setText("Ejemplo práctico:");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, -1, 30));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 290, -1, 30));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 102, 51));
         jLabel4.setText("Recordá:");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 430, -1, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 410, -1, -1));
 
         jTextArea3.setEditable(false);
         jTextArea3.setBackground(new java.awt.Color(240, 240, 219));
@@ -98,7 +106,7 @@ public class PanelCap1 extends javax.swing.JPanel {
         jTextArea3.setWrapStyleWord(true);
         jScrollPane3.setViewportView(jTextArea3);
 
-        add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 330, 520, 70));
+        add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 340, 520, 50));
 
         jTextArea4.setEditable(false);
         jTextArea4.setBackground(new java.awt.Color(240, 240, 219));
@@ -109,19 +117,24 @@ public class PanelCap1 extends javax.swing.JPanel {
         jTextArea4.setWrapStyleWord(true);
         jScrollPane4.setViewportView(jTextArea4);
 
-        add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 430, 560, 70));
+        add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 440, 560, 50));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/download.png"))); // NOI18N
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, -20, 410, 630));
 
         jLabel8.setBackground(new java.awt.Color(204, 255, 204));
-        jLabel8.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(0, 102, 51));
         jLabel8.setText("CAPITULO 1: ISO");
-        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 20, 230, 50));
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 370, 50));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Fondo_Paneles_880x600.png"))); // NOI18N
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 610));
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -140,6 +153,7 @@ public class PanelCap1 extends javax.swing.JPanel {
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextArea jTextArea3;
     private javax.swing.JTextArea jTextArea4;
+    private javax.swing.JTextField jTextField1;
     private ucr.ac.cr.cliclab.vista.VentanaCapitulo ventanaCapitulo1;
     // End of variables declaration//GEN-END:variables
 }

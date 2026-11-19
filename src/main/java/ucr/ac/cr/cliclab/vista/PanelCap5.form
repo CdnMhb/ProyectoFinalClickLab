@@ -28,7 +28,7 @@
       </AuxValues>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="100" y="430" width="560" height="70"/>
+          <AbsoluteConstraints x="170" y="440" width="430" height="60"/>
         </Constraint>
       </Constraints>
 
@@ -61,7 +61,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="20" y="430" width="-1" height="-1"/>
+          <AbsoluteConstraints x="350" y="410" width="-1" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -71,7 +71,7 @@
       </AuxValues>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="100" y="330" width="560" height="60"/>
+          <AbsoluteConstraints x="180" y="330" width="420" height="60"/>
         </Constraint>
       </Constraints>
 
@@ -86,7 +86,7 @@
             <Property name="columns" type="int" value="20"/>
             <Property name="lineWrap" type="boolean" value="true"/>
             <Property name="rows" type="int" value="5"/>
-            <Property name="text" type="java.lang.String" value="Si fotografi&#xe1;s un paisaje soleado, pod&#xe9;s utilizar ISO 100. &#xa;Si est&#xe1;s en una habitaci&#xf3;n oscura, probablemente necesit&#xe9;s subirlo."/>
+            <Property name="text" type="java.lang.String" value="Para fotografiar un paisaje extenso, pod&#xe9;s utilizar 18 mm. Para fotografiar un ave desde lejos, pod&#xe9;s utilizar 200 mm."/>
             <Property name="wrapStyleWord" type="boolean" value="true"/>
           </Properties>
         </Component>
@@ -104,7 +104,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="20" y="310" width="80" height="40"/>
+          <AbsoluteConstraints x="330" y="290" width="110" height="40"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -134,7 +134,7 @@
             <Property name="columns" type="int" value="20"/>
             <Property name="lineWrap" type="boolean" value="true"/>
             <Property name="rows" type="int" value="5"/>
-            <Property name="text" type="java.lang.String" value="El ISO es un ajuste de la c&#xe1;mara que controla la sensibilidad utilizada para obtener una imagen con mayor o menor brillo.  &#xa;&#xa;Un ISO bajo produce im&#xe1;genes m&#xe1;s limpias, mientras que un ISO alto permite trabajar en lugares oscuros, pero puede generar ruido digital."/>
+            <Property name="text" type="java.lang.String" value="Es una caracter&#xed;stica &#xf3;ptica del lente que se mide en mil&#xed;metros (mm) y determina principalmente el &#xe1;ngulo de visi&#xf3;n y el tama&#xf1;o con el que aparecen los objetos en la imagen.&#xa;&#xa;Una distancia focal corta permite capturar un campo de visi&#xf3;n amplio.&#xa;&#xa;Una distancia focal larga ofrece un campo de visi&#xf3;n m&#xe1;s estrecho y hace que los sujetos ocupen mayor espacio en la fotograf&#xed;a.&#xa;"/>
             <Property name="wrapStyleWord" type="boolean" value="true"/>
           </Properties>
         </Component>
@@ -146,7 +146,7 @@
       </AuxValues>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="410" y="130" width="240" height="140"/>
+          <AbsoluteConstraints x="410" y="150" width="240" height="120"/>
         </Constraint>
       </Constraints>
 
@@ -161,7 +161,7 @@
             <Property name="columns" type="int" value="20"/>
             <Property name="lineWrap" type="boolean" value="true"/>
             <Property name="rows" type="int" value="5"/>
-            <Property name="text" type="java.lang.String" value="ISO 100&#x2013;200: ideal para exteriores con mucha luz.  &#xa;&#xa; ISO 400&#x2013;800: &#xfa;til en interiores iluminados.  &#xa;&#xa;ISO 1600 o m&#xe1;s: permite fotografiar con poca luz, pero puede aumentar el ruido."/>
+            <Property name="text" type="java.lang.String" value="&#x2022;18 mm: gran angular, ideal para paisajes.&#xa;&#x2022;35 mm: &#xfa;til para fotograf&#xed;a cotidiana.&#xa;&#x2022;50 mm: com&#xfa;n en retratos y fotograf&#xed;a general.&#xa;&#x2022;200 mm: teleobjetivo, &#xfa;til para sujetos lejanos.&#xa;"/>
             <Property name="wrapStyleWord" type="boolean" value="true"/>
           </Properties>
         </Component>
@@ -175,11 +175,11 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="33" green="66" red="0" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="&#xbf;Qu&#xe9; es el ISO?"/>
+        <Property name="text" type="java.lang.String" value="&#xbf;Qu&#xe9; es la distancia focal?"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="40" y="90" width="-1" height="20"/>
+          <AbsoluteConstraints x="120" y="100" width="-1" height="20"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -195,7 +195,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="390" y="80" width="150" height="30"/>
+          <AbsoluteConstraints x="460" y="90" width="150" height="30"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -205,13 +205,16 @@
           <Color blue="cc" green="ff" red="cc" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Verdana" size="24" style="1"/>
+          <Font name="Times New Roman" size="36" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="CAPITULO 1: ISO"/>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="33" green="66" red="0" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="CAPITULO 5: Distancia focal"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="90" y="20" width="420" height="50"/>
+          <AbsoluteConstraints x="20" y="20" width="510" height="50"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -224,6 +227,28 @@
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="710" y="-10" width="390" height="630"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTextField1">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="93" green="c0" red="a2" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Book Antiqua" size="14" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Objetivo: Escoger la distancia focal seg&#xfa;n el &#xe1;ngulo de visi&#xf3;n y el tama&#xf1;o del sujeto que se busca."/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField1ActionPerformed"/>
+      </Events>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="140" y="550" width="-1" height="30"/>
         </Constraint>
       </Constraints>
     </Component>
