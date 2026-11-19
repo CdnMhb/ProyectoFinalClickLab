@@ -10,6 +10,7 @@ import javax.swing.JOptionPane;
 import ucr.ac.cr.cliclab.modelo.Actividad;
 import ucr.ac.cr.cliclab.modelo.RegistroActividad;
 import ucr.ac.cr.cliclab.modelo.RegistroResultados;
+import ucr.ac.cr.cliclab.modelo.TemporizadorEvaluacion;
 import ucr.ac.cr.cliclab.vista.VentanaActividad;
 
 /**
@@ -25,6 +26,10 @@ public class ControladorActividad implements ActionListener {
     private int capitulo;      // 1, 2 o 3
     private int indice;
     private boolean respondida;
+    
+    private TemporizadorEvaluacion temporizador =
+        new TemporizadorEvaluacion();
+
 
     public ControladorActividad(RegistroActividad ra, RegistroResultados rr, ControladorResultados cr) {
         this.registroActividad = ra;
@@ -34,17 +39,37 @@ public class ControladorActividad implements ActionListener {
         this.ventana.listenerButton(this);
     }
 
-    public void iniciar(int capitulo) {
-        this.capitulo = capitulo;
-        this.actuales = registroActividad.getPorCapitulo(capitulo);
-        this.indice = 0;
-        if (actuales.isEmpty()) {
-            JOptionPane.showMessageDialog(null, "Este capítulo aún no tiene actividades");
-            return;
-        }
-        mostrar();
-        ventana.setVisible(true);
+public void iniciar(int capitulo) {
+    this.capitulo = capitulo;
+    this.actuales = registroActividad.getPorCapitulo(capitulo);
+    this.indice = 0;
+
+    if (actuales.isEmpty()) {
+        JOptionPane.showMessageDialog(null,
+                "Este capítulo aún no tiene actividades");
+        return;
     }
+
+    mostrar();
+    ventana.setVisible(true);
+
+    temporizador.iniciar(
+            60,
+            segundos -> ventana.actualizarTiempo(segundos),
+            () -> finalizarPorTiempo()
+    );
+}
+
+private void finalizarPorTiempo() {
+    temporizador.detener();
+
+    JOptionPane.showMessageDialog(ventana,
+            "¡Se acabó el tiempo!");
+
+    ventana.setVisible(false);
+    controladorResultados.mostrar();
+}
+
 
     private void mostrar() {
         Actividad a = actuales.get(indice);
@@ -90,10 +115,10 @@ public class ControladorActividad implements ActionListener {
         indice++;
         if (indice < actuales.size()) {
             mostrar();
-        } else {
+        } else  {
+            temporizador.detener();
             ventana.setVisible(false);
-          ventana.setVisible(false);
-    controladorResultados.mostrar();  // luego se cambia por VentanaResultados
-        }
+            controladorResultados.mostrar();
+    }
     }
 }

@@ -41,6 +41,7 @@ public class PanelCap3 extends javax.swing.JPanel {
         jLabel2 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -123,6 +124,9 @@ public class PanelCap3 extends javax.swing.JPanel {
         jLabel7.setText("CAPITULO 1: ISO");
         add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 20, 420, 50));
 
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/download (23.png"))); // NOI18N
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, -20, 390, 630));
+
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Fondo_Paneles_880x600.png"))); // NOI18N
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
@@ -134,6 +138,7 @@ public class PanelCap3 extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;

@@ -16,13 +16,22 @@ public class RegistroResultados {
         this.estado = new int[capitulos][actividadesPorCapitulo];
     }
 
-    public boolean registrar(int cap, int act, boolean correcta) {
-        if (estado[cap][act] != 0) {
-            return false;          // ya estaba respondida: no se cuenta dos veces
-        }
-        estado[cap][act] = correcta ? 1 : 2;
-        return true;
+    
+public boolean registrar(int cap, int act, boolean correcta) {
+
+    if (estado[cap][act] == 1) {
+        return false;
     }
+
+    if (correcta) {
+        estado[cap][act] = 1;
+    } else if (estado[cap][act] == 0) {
+        estado[cap][act] = 2;
+    }
+
+    return true;
+}
+//El resultado siempre conserva la mejor respuesta obtenida en cada actividad.
 
     public int getAciertos(int cap) {
         int total = 0;

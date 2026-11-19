@@ -48,7 +48,7 @@ public class PanelCap1 extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 102, 51));
         jLabel1.setText("¿Qué es el ISO?");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 60, -1, 20));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 100, -1, 20));
 
         jScrollPane1.setBackground(new java.awt.Color(240, 240, 219));
 
@@ -61,12 +61,12 @@ public class PanelCap1 extends javax.swing.JPanel {
         jTextArea1.setWrapStyleWord(true);
         jScrollPane1.setViewportView(jTextArea1);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, 260, 140));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 140, 260, 140));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 102, 51));
         jLabel2.setText("Valores comunes:");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 60, 150, 30));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 100, 150, 30));
 
         jTextArea2.setEditable(false);
         jTextArea2.setBackground(new java.awt.Color(240, 240, 219));
@@ -77,17 +77,17 @@ public class PanelCap1 extends javax.swing.JPanel {
         jTextArea2.setWrapStyleWord(true);
         jScrollPane2.setViewportView(jTextArea2);
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 90, 240, 140));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 130, 240, 140));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 102, 51));
         jLabel3.setText("Ejemplo práctico:");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 250, -1, 30));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, -1, 30));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 102, 51));
         jLabel4.setText("Recordá:");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, -1, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 430, -1, -1));
 
         jTextArea3.setEditable(false);
         jTextArea3.setBackground(new java.awt.Color(240, 240, 219));
@@ -98,7 +98,7 @@ public class PanelCap1 extends javax.swing.JPanel {
         jTextArea3.setWrapStyleWord(true);
         jScrollPane3.setViewportView(jTextArea3);
 
-        add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 250, 310, 40));
+        add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 330, 520, 70));
 
         jTextArea4.setEditable(false);
         jTextArea4.setBackground(new java.awt.Color(240, 240, 219));
@@ -109,18 +109,18 @@ public class PanelCap1 extends javax.swing.JPanel {
         jTextArea4.setWrapStyleWord(true);
         jScrollPane4.setViewportView(jTextArea4);
 
-        add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 330, 330, 40));
+        add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 430, 560, 70));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/ClickLab_ISO_128x278.png"))); // NOI18N
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 90, -1, 290));
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/download.png"))); // NOI18N
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, -20, 410, 630));
 
         jLabel8.setBackground(new java.awt.Color(204, 255, 204));
         jLabel8.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel8.setText("CAPITULO 1: ISO");
-        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 230, 50));
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 20, 230, 50));
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/ClickLab_Fondo_702x472.png"))); // NOI18N
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 480));
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Fondo_Paneles_880x600.png"))); // NOI18N
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 610));
     }// </editor-fold>//GEN-END:initComponents
 
 

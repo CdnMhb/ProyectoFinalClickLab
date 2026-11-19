@@ -39,6 +39,7 @@ public class PanelCap2 extends javax.swing.JPanel {
         jTextArea3 = new javax.swing.JTextArea();
         jScrollPane4 = new javax.swing.JScrollPane();
         jTextArea4 = new javax.swing.JTextArea();
+        jLabel7 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -57,7 +58,7 @@ public class PanelCap2 extends javax.swing.JPanel {
         jTextArea1.setInheritsPopupMenu(true);
         jScrollPane1.setViewportView(jTextArea1);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 86, 270, 130));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, 310, 150));
 
         jTextArea2.setEditable(false);
         jTextArea2.setBackground(new java.awt.Color(240, 240, 219));
@@ -67,42 +68,47 @@ public class PanelCap2 extends javax.swing.JPanel {
         jTextArea2.setInheritsPopupMenu(true);
         jScrollPane2.setViewportView(jTextArea2);
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 80, 230, 140));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 130, 260, 150));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 102, 51));
         jLabel3.setText("¿Qué es la velocidad de obturación?");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, -1, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 100, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 102, 51));
         jLabel4.setText("Valores Comunes:");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 60, -1, 20));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 100, -1, 20));
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 102, 51));
         jLabel5.setText("Ejemplo Práctico:");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 260, -1, -1));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(0, 102, 51));
         jLabel6.setText("Recordá:");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 330, -1, -1));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 430, -1, -1));
 
+        jTextArea3.setBackground(new java.awt.Color(240, 240, 219));
         jTextArea3.setColumns(20);
         jTextArea3.setRows(5);
         jScrollPane3.setViewportView(jTextArea3);
 
-        add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 230, -1, -1));
+        add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 320, 440, 80));
 
+        jTextArea4.setBackground(new java.awt.Color(240, 240, 219));
         jTextArea4.setColumns(20);
         jTextArea4.setRows(5);
         jScrollPane4.setViewportView(jTextArea4);
 
-        add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 320, -1, -1));
+        add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 430, 430, 70));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/ClickLab_Fondo_702x472.png"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/download (1).png"))); // NOI18N
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, -20, 410, 630));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Fondo_Paneles_880x600.png"))); // NOI18N
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 880, 610));
     }// </editor-fold>//GEN-END:initComponents
 
 
@@ -113,6 +119,7 @@ public class PanelCap2 extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;

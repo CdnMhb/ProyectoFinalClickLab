@@ -59,12 +59,12 @@ public class FrmMain extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Showcard Gothic", 1, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 102, 51));
         jLabel2.setText("Fotografia Interactiva");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 20, 490, 50));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 50, 490, 50));
 
         jLabel3.setFont(new java.awt.Font("Segoe Print", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 102, 51));
         jLabel3.setText("APRENDÉ FOTOGRAFÍA BÁSICA");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 350, 310, 30));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 460, 310, 30));
 
         jTextArea1.setEditable(false);
         jTextArea1.setBackground(new java.awt.Color(240, 240, 219));
@@ -76,10 +76,10 @@ public class FrmMain extends javax.swing.JFrame {
         jTextArea1.setInheritsPopupMenu(true);
         jScrollPane1.setViewportView(jTextArea1);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 380, 390, 60));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 500, 390, 60));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/fondo_panel_706x472.png"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, 1110, 490));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Fondo_Camara_880x600.png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         jMenuBar1.setBackground(new java.awt.Color(204, 255, 204));
         jMenuBar1.setForeground(new java.awt.Color(51, 153, 0));

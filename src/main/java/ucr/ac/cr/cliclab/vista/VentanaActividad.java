@@ -24,6 +24,17 @@ public class VentanaActividad extends javax.swing.JFrame {
     btnSiguiente.setActionCommand("Siguiente");
 }
 
+   
+public void actualizarTiempo(int segundos) {
+    int minutos = segundos / 60;
+    int resto = segundos % 60;
+
+    lblTiempo.setText(
+        String.format("Tiempo: %02d:%02d", minutos, resto)
+    );
+}
+
+   
 public void listenerButton(ActionListener l) {
     btnResponder.addActionListener(l);
     btnSiguiente.addActionListener(l);
@@ -68,54 +79,64 @@ public void mostrarRetroalimentacion(boolean correcta, String explicacion) {
     private void initComponents() {
 
         grupoOpciones = new javax.swing.ButtonGroup();
-        lblEnunciado = new javax.swing.JLabel();
         rbOpcion1 = new javax.swing.JRadioButton();
         rbOpcion2 = new javax.swing.JRadioButton();
         rbOpcion3 = new javax.swing.JRadioButton();
         btnResponder = new javax.swing.JButton();
         btnSiguiente = new javax.swing.JButton();
         lblRetroalimentacion = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        lblTiempo = new javax.swing.JLabel();
+        lblEnunciado = new javax.swing.JTextArea();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lblEnunciado.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        lblEnunciado.setText("jLabel1");
-        getContentPane().add(lblEnunciado, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 90, 590, -1));
 
         grupoOpciones.add(rbOpcion1);
         rbOpcion1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         rbOpcion1.setText("jRadioButton1");
         rbOpcion1.addActionListener(this::rbOpcion1ActionPerformed);
-        getContentPane().add(rbOpcion1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 160, -1, -1));
+        getContentPane().add(rbOpcion1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, -1, -1));
 
         grupoOpciones.add(rbOpcion2);
         rbOpcion2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         rbOpcion2.setText("jRadioButton2");
-        getContentPane().add(rbOpcion2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 230, -1, -1));
+        getContentPane().add(rbOpcion2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, -1, -1));
 
         grupoOpciones.add(rbOpcion3);
         rbOpcion3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         rbOpcion3.setText("jRadioButton3");
         rbOpcion3.addActionListener(this::rbOpcion3ActionPerformed);
-        getContentPane().add(rbOpcion3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 310, -1, -1));
+        getContentPane().add(rbOpcion3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, -1, -1));
 
         btnResponder.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnResponder.setText("Responder");
-        getContentPane().add(btnResponder, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 460, 160, -1));
+        getContentPane().add(btnResponder, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 450, 280, -1));
 
         btnSiguiente.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnSiguiente.setText("Siguiente");
         btnSiguiente.addActionListener(this::btnSiguienteActionPerformed);
-        getContentPane().add(btnSiguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 460, 160, -1));
+        getContentPane().add(btnSiguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 450, 280, -1));
 
         lblRetroalimentacion.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         lblRetroalimentacion.setText("jLabel1");
         getContentPane().add(lblRetroalimentacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 150, 210, 340));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Fondo_Evaluaciones_880x600.png"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -160, 1010, 900));
+        lblTiempo.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        lblTiempo.setForeground(new java.awt.Color(0, 153, 153));
+        lblTiempo.setText("Tiempo: 00:30");
+        getContentPane().add(lblTiempo, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 20, -1, -1));
+
+        lblEnunciado.setEditable(false);
+        lblEnunciado.setColumns(20);
+        lblEnunciado.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        lblEnunciado.setLineWrap(true);
+        lblEnunciado.setRows(5);
+        lblEnunciado.setWrapStyleWord(true);
+        getContentPane().add(lblEnunciado, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 84, 690, 60));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Fondo_Evaluaciones_880x600.png"))); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -138,9 +159,10 @@ public void mostrarRetroalimentacion(boolean correcta, String explicacion) {
     private javax.swing.JButton btnResponder;
     private javax.swing.JButton btnSiguiente;
     private javax.swing.ButtonGroup grupoOpciones;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel lblEnunciado;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JTextArea lblEnunciado;
     private javax.swing.JLabel lblRetroalimentacion;
+    private javax.swing.JLabel lblTiempo;
     private javax.swing.JRadioButton rbOpcion1;
     private javax.swing.JRadioButton rbOpcion2;
     private javax.swing.JRadioButton rbOpcion3;
