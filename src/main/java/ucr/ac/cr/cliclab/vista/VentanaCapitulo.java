@@ -51,15 +51,20 @@ public void actualizarProgreso(int capitulo, int total) {
     private void initComponents() {
 
         pnlContenido = new javax.swing.JPanel();
+        btnSiguienteCap = new javax.swing.JButton();
         btnVolver = new javax.swing.JButton();
         pnlTeoria = new javax.swing.JPanel();
         btnActividades = new javax.swing.JButton();
-        btnSiguienteCap = new javax.swing.JButton();
         barCapitulos = new javax.swing.JProgressBar();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         pnlContenido.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btnSiguienteCap.setText("Siguiente capítulo ▶");
+        btnSiguienteCap.setActionCommand("SiguienteCap");
+        btnSiguienteCap.addActionListener(this::btnSiguienteCapActionPerformed);
+        pnlContenido.add(btnSiguienteCap, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 50, 890, -1));
 
         btnVolver.setBackground(new java.awt.Color(182, 215, 182));
         btnVolver.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -67,7 +72,7 @@ public void actualizarProgreso(int capitulo, int total) {
         btnVolver.setText("Volver al menú");
         btnVolver.setActionCommand("VolverMenu");
         btnVolver.setFocusPainted(false);
-        pnlContenido.add(btnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 0, 410, 20));
+        pnlContenido.add(btnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 0, 430, 30));
 
         pnlTeoria.setBackground(new java.awt.Color(255, 255, 204));
         pnlTeoria.setPreferredSize(new java.awt.Dimension(880, 600));
@@ -76,11 +81,11 @@ public void actualizarProgreso(int capitulo, int total) {
         pnlTeoria.setLayout(pnlTeoriaLayout);
         pnlTeoriaLayout.setHorizontalGroup(
             pnlTeoriaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 880, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
         pnlTeoriaLayout.setVerticalGroup(
             pnlTeoriaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 670, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
 
         pnlContenido.add(pnlTeoria, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 880, 670));
@@ -91,19 +96,14 @@ public void actualizarProgreso(int capitulo, int total) {
         btnActividades.setText("Empezar nuevo intento de actividad?");
         btnActividades.setActionCommand("Actividades");
         btnActividades.addActionListener(this::btnActividadesActionPerformed);
-        pnlContenido.add(btnActividades, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 470, 20));
-
-        btnSiguienteCap.setText("Siguiente capítulo ▶");
-        btnSiguienteCap.setActionCommand("SiguienteCap");
-        btnSiguienteCap.addActionListener(this::btnSiguienteCapActionPerformed);
-        pnlContenido.add(btnSiguienteCap, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 880, -1));
+        pnlContenido.add(btnActividades, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 450, 30));
 
         barCapitulos.setBackground(new java.awt.Color(204, 255, 204));
         barCapitulos.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         barCapitulos.setForeground(new java.awt.Color(255, 0, 0));
         barCapitulos.setMaximum(5);
         barCapitulos.setStringPainted(true);
-        pnlContenido.add(barCapitulos, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 880, 30));
+        pnlContenido.add(barCapitulos, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 880, 20));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
