@@ -12,9 +12,9 @@ Personas principiantes en la fotografía que quieren entender cómo funcionan el
 
 ## Integrantes
 
-- **Mathias Hidalgo** — [@CdnMhb](https://github.com/CdnMhb)
-- **Jimena Saenz** — [@MenaBel19](https://github.com/MenaBel19)
-- **Naomy Delgado** — [@naonzzz](https://github.com/naonzzz)
+- **Mathias Hidalgo** (CdnMhb) — <https://github.com/CdnMhb>
+- **Jimena Saenz** (MenaBel19) — <https://github.com/MenaBel19>
+- **Naomy Delgado** (naonzzz) — <https://github.com/naonzzz>
 
 Universidad de Costa Rica · 2026
 
@@ -42,17 +42,17 @@ La clase principal es `ucr.ac.cr.cliclab.ClicLab`.
 ## Funciones disponibles
 
 - **Portada y menú de capítulos**, desde donde se entra a los cinco capítulos y a los resultados.
-- **Navegación entre capítulos**: barra de progreso ("Capítulo X de 5") y botón para pasar al siguiente capítulo sin volver al menú.
+- **Navegación entre capítulos**: barra de progreso ("Capítulo X de 5") y botones para pasar al capítulo anterior o al siguiente sin volver al menú.
 - **Teoría por capítulo**: ISO, velocidad de obturación, apertura, profundidad de campo y distancia focal.
 - **Actividades de práctica** (15 en total, 3 por capítulo, 10 puntos cada una) de dos tipos: selección única y verdadero o falso.
+- **Temporizador**: cada intento de actividades de un capítulo tiene 60 segundos. Si se acaba el tiempo, la app avisa y pasa a la pantalla de resultados.
 - **Retroalimentación inmediata**: dice si la respuesta fue correcta y explica por qué.
 - **Pantalla de resultados**: aciertos y errores por capítulo, total respondidas y porcentaje de desempeño.
 - **Nuevo intento**: borra los resultados anteriores para volver a empezar.
 
 **Limitaciones actuales**
 
-- Los resultados solo se guardan en memoria, así que se pierden al cerrar la aplicación.
-- Una actividad no se puede responder dos veces en el mismo intento; para repetirla hay que usar "Nuevo intento".
+Creemos que no hay, ya que sentimos que logramos todo lo que nos propusimos y no le hace falta nada necesario.
 
 ## Estructura general
 
@@ -71,7 +71,7 @@ ProyectoFinalClickLab/
 
 El proyecto está organizado con el patrón **Modelo-Vista-Controlador (MVC)**:
 
-- **Modelo:** `Contenido`, `Capitulo`, `Actividad` (abstracta, implementa `Evaluable`), `ActividadSeleccionUnica`, `ActividadVerdaderoFalso`, `RegistroCapitulo`, `RegistroActividad` y `RegistroResultados`.
+- **Modelo:** `Contenido`, `Capitulo`, `Actividad` (abstracta, implementa `Evaluable`), `ActividadSeleccionUnica`, `ActividadVerdaderoFalso`, `TemporizadorEvaluacion` (hilo que cuenta el tiempo), `RegistroCapitulo`, `RegistroActividad` y `RegistroResultados`.
 - **Vista:** `FrmMain` (portada), `VentanaMenu`, `VentanaCapitulo` con `PanelCap1`–`PanelCap5`, `VentanaActividad` y `VentanaResultados`.
 - **Controlador:** `ControladorMain`, `ControladorMenuLibro`, `ControladorCapitulo`, `ControladorActividad` y `ControladorResultados`.
 
@@ -82,4 +82,4 @@ Java 21 · Java Swing · Maven · AbsoluteLayout (librería de NetBeans)
 ## Documentación
 
 - Repositorio: <https://github.com/CdnMhb/ProyectoFinalClickLab>
-  \\Falta la documentación del proyecto y el video de demostración\\
+- Documentación y demostración: <https://drive.google.com/drive/folders/1lj3eXgkA8mjcNkz2cosy3I5WN_YkXKtY?usp=sharing>
